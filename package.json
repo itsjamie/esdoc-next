@@ -23,9 +23,11 @@
     "lint": "node ./script/eslint.js"
   },
   "dependencies": {
-    "babel-generator": "6.26.1",
-    "babel-traverse": "6.26.0",
-    "babylon": "6.18.0",
+    "@babel/core": "^7.7.2",
+    "@babel/generator": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/parser": "^7.7.3",
+    "@babel/traverse": "^7.7.2",
     "cheerio": "1.0.0-rc.3",
     "color-logger": "0.0.6",
     "escape-html": "1.0.3",
@@ -36,10 +38,11 @@
     "taffydb": "2.7.3"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
+    "@babel/cli": "^7.7.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
     "babel-plugin-istanbul": "5.2.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-    "babel-register": "6.26.0",
     "codecov": "3.6.1",
     "esdoc-accessor-plugin": "latest",
     "esdoc-external-ecmascript-plugin": "latest",

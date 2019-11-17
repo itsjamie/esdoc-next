@@ -87,7 +87,7 @@ class Plugin {
   /**
    * handle code parser.
    * @param {function(code: string)} parser - original js parser.
-   * @param {object} parserOption - default babylon options.
+   * @param {object} parserOption - default babel parser options.
    * @param {string} filePath - source code file path.
    * @param {string} code - original code.
    * @returns {{parser: function(code: string), parserOption: Object}} handled parser.
