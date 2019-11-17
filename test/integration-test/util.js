@@ -2,6 +2,7 @@ import fs from 'fs';
 
 export function find(key, ...values) {
   if (values.length === 1) {
+    // eslint-disable-next-line array-callback-return, consistent-return
     return global.docs.find((doc) => {
       if (typeof values[0] === 'string') return doc[key] === values[0];
       if (values[0] instanceof RegExp) return doc[key].match(values[0]);
@@ -10,6 +11,7 @@ export function find(key, ...values) {
 
   const results = [];
   for (const value of values) {
+    // eslint-disable-next-line array-callback-return, consistent-return
     const result = global.docs.find(doc => {
       if (typeof value === 'string') return doc[key] === value;
       if (value instanceof RegExp) return doc[key].match(value);

@@ -10,7 +10,7 @@ describe('test ESDocCLI:', ()=>{
     it('can show help', ()=>{
       const argv = [null, null];
       const cli = new ESDocCLI(argv);
-      console.log = function(){};
+      console.log = function() {};
       cli._showHelp();
       console.log = orig;
     });
@@ -18,7 +18,7 @@ describe('test ESDocCLI:', ()=>{
     it('can show version', ()=>{
       const argv = [null, null];
       const cli = new ESDocCLI(argv);
-      console.log = function(){};
+      console.log = function() {};
       cli._showVersion();
       console.log = orig;
     });
