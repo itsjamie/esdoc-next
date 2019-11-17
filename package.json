@@ -23,32 +23,32 @@
     "lint": "node ./script/eslint.js"
   },
   "dependencies": {
-    "cheerio": "1.0.0-rc.2",
-    "color-logger": "0.0.6",
-    "escape-html": "1.0.3",
-    "babylon": "6.18.0",
     "babel-generator": "6.26.1",
     "babel-traverse": "6.26.0",
-    "fs-extra": "5.0.0",
+    "babylon": "6.18.0",
+    "cheerio": "1.0.0-rc.3",
+    "color-logger": "0.0.6",
+    "escape-html": "1.0.3",
+    "fs-extra": "8.1.0",
     "ice-cap": "0.0.4",
-    "marked": "0.3.19",
+    "marked": "0.7.0",
     "minimist": "1.2.0",
     "taffydb": "2.7.3"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-plugin-istanbul": "4.1.6",
+    "babel-plugin-istanbul": "5.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "babel-register": "6.26.0",
-    "codecov": "3.0.1",
+    "codecov": "3.6.1",
     "esdoc-accessor-plugin": "latest",
     "esdoc-external-ecmascript-plugin": "latest",
     "esdoc-importpath-plugin": "^1.0.1",
     "esdoc-standard-plugin": "latest",
     "esdoc-undocumented-identifier-plugin": "latest",
-    "eslint": "4.19.1",
-    "mocha": "5.1.1",
-    "nyc": "11.7.1"
+    "eslint": "6.6.0",
+    "mocha": "6.2.2",
+    "nyc": "14.1.1"
   },
   "keywords": [
     "jsdoc",
