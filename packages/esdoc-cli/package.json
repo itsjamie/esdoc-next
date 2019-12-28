@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "@itsjamie/esdoc-core": "^0.1.0-alpha.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

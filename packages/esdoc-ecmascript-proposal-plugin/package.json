@@ -30,5 +30,8 @@
     "src",
     "README.md"
   ],
-  "main": "src/Plugin.js"
+  "main": "src/Plugin.js",
+  "publishConfig": {
+    "access": "public"
+  }
 }

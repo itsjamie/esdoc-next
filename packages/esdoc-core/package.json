@@ -65,5 +65,8 @@
     "src",
     "README.md"
   ],
-  "main": "src/index.js"
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  }
 }

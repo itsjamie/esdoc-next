@@ -33,5 +33,8 @@
   },
   "scripts": {
     "test": "rm -rf ./test/out && mocha --require ./test/init.js $(find test/ -regex '.*.test.js$') -R spec"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
