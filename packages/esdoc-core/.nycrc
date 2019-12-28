@@ -1,0 +1,21 @@
+{
+  "include": [
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "_temp/**",
+    "docs/**",
+    "out/**",
+    "node_modules/**",
+    "script/**",
+    "src/**/template/**",
+    "test/**"
+  ],
+  "reporter": [
+    "lcov",
+    "text-summary"
+  ],
+  "all": true,
+  "sourceMap": false,
+  "instrument": false
+}

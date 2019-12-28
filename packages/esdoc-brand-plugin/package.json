@@ -1,0 +1,36 @@
+{
+  "name": "@itsjamie/esdoc-brand-plugin",
+  "version": "0.0.0",
+  "description": "A brand plugin for ESDoc",
+  "author": "h13i32maru",
+  "homepage": "https://github.com/itsjamie/esdoc-next",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsjamie/esdoc-next"
+  },
+  "dependencies": {
+    "cheerio": "0.22.0"
+  },
+  "devDependencies": {
+    "@itsjamie/esdoc-core": "^0.0.0",
+    "mocha": "2.5.3"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "scripts": {
+    "test": "rm -rf ./test/out && mocha --require ./test/init.js $(find test/ -regex '.*.test.js$') -R spec"
+  },
+  "keywords": [
+    "esdoc",
+    "brand",
+    "title",
+    "plugin"
+  ],
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "main": "src/Plugin.js"
+}

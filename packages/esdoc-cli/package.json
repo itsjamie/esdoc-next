@@ -1,0 +1,28 @@
+{
+  "name": "@itsjamie/esdoc-cli",
+  "version": "0.0.0",
+  "description": "A CLI to generate JavaScript documentation websites.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsjamie/esdoc-next.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "h13i32maru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsjamie/esdoc-next/issues"
+  },
+  "homepage": "https://github.com/itsjamie/esdoc-next#readme",
+  "main": "./cli.js",
+  "bin": {
+    "esdoc": "./cli.js"
+  },
+  "devDependencies": {
+    "@itsjamie/esdoc-core": "^0.0.0"
+  }
+}

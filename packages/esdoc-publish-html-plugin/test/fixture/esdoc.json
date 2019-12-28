@@ -1,0 +1,73 @@
+{
+  "source": "./test/fixture/src",
+  "destination": "./test/fixture/out",
+  "index": "./test/fixture/README.md",
+  "package": "./test/fixture/package.json",
+  "plugins": [
+    {
+      "name": "@itsjamie/esdoc-brand-plugin", 
+      "option": {
+        "logo": "./test/fixture/logo.png", 
+        "image": "https://esdoc.org/manual/asset/image/logo.png"
+      }
+    },
+    { 
+      "name": "@itsjamie/esdoc-coverage-plugin" 
+    },
+    {
+      "name": "@itsjamie/esdoc-ecmascript-proposal-plugin", 
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "@itsjamie/esdoc-external-ecmascript-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "@itsjamie/esdoc-accessor-plugin", 
+      "option": {
+        "access": ["public", "protected", "private"], 
+        "autoPrivate": true
+      }
+    },
+    { 
+      "name": "@itsjamie/esdoc-type-inference-plugin", 
+      "option": {
+        "enable": true
+      }
+    },
+    { "name": "@itsjamie/esdoc-undocumented-identifier-plugin" },
+    { "name": "@itsjamie/esdoc-unexported-identifier-plugin" },
+    {
+      "name": "@itsjamie/esdoc-integrate-manual-plugin", 
+      "option": {
+        "index": "./test/fixture/manual/index.md",
+        "files": [
+          "./test/fixture/manual/overview.md",
+          "./test/fixture/manual/design.md",
+          "./test/fixture/manual/installation.md",
+          "./test/fixture/manual/tutorial.md",
+          "./test/fixture/manual/usage1.md",
+          "./test/fixture/manual/usage2.md",
+          "./test/fixture/manual/configuration.md",
+          "./test/fixture/manual/example.md",
+          "./test/fixture/manual/advanced.md",
+          "./test/fixture/manual/faq.md",
+          "./test/fixture/CHANGELOG.md"
+        ]
+      }
+    },
+    {
+      "name": "@itsjamie/esdoc-integrate-test-plugin", 
+      "option": {
+        "type": "mocha",
+        "source": "./test/fixture/test",
+        "includes": ["Test.js$"]
+      }
+    },
+    {"name": "./src/Plugin.js"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@itsjamie/esdoc-test",
+  "version": "1.2.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsjamie/esdoc-next"
+  },
+  "main": "./src/Desc/Desc.js"
+}
