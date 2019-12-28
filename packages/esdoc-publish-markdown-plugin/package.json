@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-publish-markdown-plugin",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.0",
   "description": "A publish markdown plugin for ESDoc [PoC]",
   "author": "h13i32maru",
   "homepage": "https://github.com/esdoc/esdoc-plugins",
@@ -14,7 +14,7 @@
     "to-markdown": "3.0.4"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.0.0",
+    "@itsjamie/esdoc-core": "^0.1.0-alpha.0",
     "mocha": "2.5.3"
   },
   "engines": {

@@ -1,14 +1,14 @@
 {
   "name": "@itsjamie/esdoc-inject-gtm-plugin",
   "description": "A inject google-tag-manager plugin for ESDoc",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.0",
   "author": "9renpoto",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^4.0.1"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.0.0",
+    "@itsjamie/esdoc-core": "^0.1.0-alpha.0",
     "mocha": "^3.5.0"
   },
   "engines": {
