@@ -1,6 +1,6 @@
 const path = require('path');
 const ts = require('typescript');
-const CommentParser = require('esdoc/src/Parser/CommentParser.js')
+const CommentParser = require('@itsjamie/esdoc-core/src/Parser/CommentParser.js');
 
 class Plugin {
   constructor() {
