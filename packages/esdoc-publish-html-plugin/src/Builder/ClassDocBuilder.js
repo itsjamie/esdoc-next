@@ -1,4 +1,4 @@
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const DocBuilder = require('./DocBuilder.js');
 const { parseExample } = require('./util.js');
 

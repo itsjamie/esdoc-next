@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const escape = require('escape-html');
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const { shorten, parseExample, escapeURLHash } = require('./util.js');
 const DocResolver = require('./DocResolver.js');
 const NPMUtil = require('@itsjamie/esdoc-core/src/Util/NPMUtil.js');

@@ -1,4 +1,4 @@
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const path = require('path');
 const cheerio = require('cheerio');
 const DocBuilder = require('./DocBuilder.js');

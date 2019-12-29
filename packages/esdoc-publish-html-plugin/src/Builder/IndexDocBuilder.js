@@ -1,5 +1,5 @@
 const path = require('path');
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const DocBuilder = require('./DocBuilder.js');
 const {markdown} = require('./util.js');
 

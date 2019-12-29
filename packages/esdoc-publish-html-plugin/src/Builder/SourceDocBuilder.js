@@ -1,5 +1,5 @@
 const fs = require('fs');
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const DocBuilder = require('./DocBuilder.js');
 const { dateForUTC } = require('./util.js');
 

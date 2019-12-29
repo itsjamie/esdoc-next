@@ -197,7 +197,6 @@ class ESDoc {
    * @private
    */
   static _getFactory(inDirPath, filePath, packageName, mainFilePath) {
-    console.log(logger)
     logger.i(`parsing: ${filePath}`);
     let ast;
     try {

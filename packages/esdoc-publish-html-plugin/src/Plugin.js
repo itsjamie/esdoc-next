@@ -1,6 +1,6 @@
 const path = require('path');
 const {taffy} = require('taffydb');
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const DocBuilder = require('./Builder/DocBuilder');
 const StaticFileBuilder = require('./Builder/StaticFileBuilder.js');
 const IdentifiersDocBuilder = require('./Builder/IdentifiersDocBuilder.js');

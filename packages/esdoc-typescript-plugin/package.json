@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "typescript": "^2.8.3"
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@itsjamie/esdoc-cli": "^0.1.0-alpha.1",

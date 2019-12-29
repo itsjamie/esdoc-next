@@ -1,4 +1,4 @@
-const IceCap = require('ice-cap');
+const IceCap = require('ice-cap').default;
 const path = require('path');
 const DocBuilder = require('./DocBuilder.js');
 const { escapeURLHash } = require('./util.js');
