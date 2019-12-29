@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-standard-plugin",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "A standard plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -13,7 +13,7 @@
     "@itsjamie/esdoc-accessor-plugin": "^0.1.0-alpha.3",
     "@itsjamie/esdoc-brand-plugin": "^0.1.0-alpha.3",
     "@itsjamie/esdoc-coverage-plugin": "^0.1.0-alpha.3",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.1.0-alpha.3",
+    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.1.0-alpha.4",
     "@itsjamie/esdoc-integrate-manual-plugin": "^0.1.0-alpha.3",
     "@itsjamie/esdoc-integrate-test-plugin": "^0.1.0-alpha.3",
     "@itsjamie/esdoc-lint-plugin": "^0.1.0-alpha.3",
