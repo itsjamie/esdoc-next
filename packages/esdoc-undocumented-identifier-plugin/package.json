@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-undocumented-identifier-plugin",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.3",
   "description": "A undocumented identifier plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.1.0-alpha.1",
+    "@itsjamie/esdoc-core": "^0.1.0-alpha.3",
     "mocha": "2.5.3"
   },
   "engines": {

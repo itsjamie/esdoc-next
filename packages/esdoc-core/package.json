@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-core",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.3",
   "description": "Good Documentation Generator For JavaScript",
   "author": {
     "name": "h13i32maru",
@@ -36,7 +36,7 @@
     "taffydb": "2.7.3"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.1.0-alpha.1",
+    "@itsjamie/esdoc-cli": "^0.1.0-alpha.3",
     "codecov": "3.6.1",
     "eslint": "6.6.0",
     "mocha": "6.2.2",
