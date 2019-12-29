@@ -1,6 +1,6 @@
 // hack: depends on esdoc internal class
-const AbstractDoc = require('esdoc/src/Doc/AbstractDoc');
-const ParamParser = require('esdoc/src/Parser/ParamParser');
+const AbstractDoc = require('@itsjamie/esdoc-core/src/Doc/AbstractDoc.js');
+const ParamParser = require('@itsjamie/esdoc-core/src/Parser/ParamParser.js');
 
 /**
  * Doc Class from test code file.
