@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-brand-plugin",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0",
   "description": "A brand plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -13,7 +13,7 @@
     "cheerio": "0.22.0"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.1.0-alpha.3",
+    "@itsjamie/esdoc-core": "^0.1.0",
     "mocha": "2.5.3"
   },
   "engines": {
