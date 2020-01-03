@@ -19,14 +19,25 @@
     "taffydb": "2.7.2"
   },
   "devDependencies": {
+    "@itsjamie/esdoc-accessor-plugin": "^0.1.0",
+    "@itsjamie/esdoc-brand-plugin": "^0.1.0",
+    "@itsjamie/esdoc-cli": "^0.1.0",
     "@itsjamie/esdoc-core": "^0.1.0",
-    "mocha": "2.5.3"
+    "@itsjamie/esdoc-coverage-plugin": "^0.1.0",
+    "@itsjamie/esdoc-ecmascript-proposal-plugin": "^0.1.0",
+    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.1.0",
+    "@itsjamie/esdoc-integrate-manual-plugin": "^0.1.0",
+    "@itsjamie/esdoc-integrate-test-plugin": "^0.1.0",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.1.0",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.1.0",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.1.0",
+    "mocha": "^6.2.2"
   },
   "engines": {
     "node": ">= 10.0.0"
   },
   "scripts": {
-    "test": "rm -rf ./test/fixture/out && mocha -t 10000 --require ./node_modules/babel-register --require ./test/src/init.js --recursive ./test/src -R spec"
+    "test": "rm -rf ./test/fixture/out && mocha -t 10000 --require ./test/src/init.js --recursive ./test/src -R spec"
   },
   "keywords": [
     "esdoc",

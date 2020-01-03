@@ -1,4 +1,4 @@
-import {readDoc, assert, findParent} from './../../util.js';
+const {readDoc, assert, findParent} = require('./../../util.js');
 
 /** @test {FunctionDoc#@_name} */
 describe('testExportAnonymousFunction', ()=> {
@@ -16,7 +16,7 @@ describe('testExportAnonymousFunction', ()=> {
     it('has desc.', ()=>{
       findParent(doc, '[id="static-function-AnonymousFunction"]', '[data-ice="detail"]', (doc)=>{
         assert.includes(doc, 'h3', 'public AnonymousFunction()');
-        assert.includes(doc, '[data-ice="importPath"]', `import AnonymousFunction from 'esdoc-test-fixture/src/Export/AnonymousFunction.js'`);
+        assert.includes(doc, '[data-ice="importPath"]', `import AnonymousFunction from '@itsjamie/esdoc-test-fixture/src/Export/AnonymousFunction.js'`);
       });
     });
   });

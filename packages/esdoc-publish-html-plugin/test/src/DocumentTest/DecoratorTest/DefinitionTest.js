@@ -1,4 +1,4 @@
-import {readDoc, assert, find, findParent} from './../../util.js';
+const {readDoc, assert, find, findParent} = require('./../../util.js');
 
 /**
  * @test {ClassDocBuilder#_buildClassDoc}

@@ -1,4 +1,4 @@
-import {readDoc, assert, find} from './../../util.js';
+const {readDoc, assert, find} = require('./../../util.js');
 
 /**
  * @test {ClassDoc#@extends}

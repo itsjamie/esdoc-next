@@ -10,8 +10,8 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.1.0",
-    "mocha": "2.5.3"
+    "@itsjamie/esdoc-cli": "^0.1.0",
+    "mocha": "^6.2.2"
   },
   "engines": {
     "node": ">= 10.0.0"
@@ -31,5 +31,9 @@
   "main": "src/Plugin.js",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "color-logger": "0.0.6",
+    "@itsjamie/esdoc-core": "^0.1.0"
   }
 }

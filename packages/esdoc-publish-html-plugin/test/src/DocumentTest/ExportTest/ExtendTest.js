@@ -1,4 +1,4 @@
-import {readDoc} from './../../util.js';
+const {readDoc} = require('./../../util.js');
 
 /** @test {DocResolver#_resolveNecessary} */
 describe('TestExportExtendsInner', ()=> {

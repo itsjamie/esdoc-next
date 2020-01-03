@@ -3,6 +3,11 @@
   "destination": "./test/out",
   "excludes": ["\\.test\\.js$"],
   "plugins": [
-    {"name": "./src/Plugin.js", "option": {"all": true}}
+    { 
+      "name": "./src/Plugin.js", 
+      "option": {
+        "all": true
+      }
+    }
   ]
 }

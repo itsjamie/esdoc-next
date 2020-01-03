@@ -1,32 +1,14 @@
-import _assert from 'assert';
-import fs from 'fs';
-import cheerio from 'cheerio';
-// import path from 'path';
-// import ESDocCLI from '../../src/ESDocCLI.js';
+const _assert = require('assert');
+const fs = require('fs');
+const cheerio = require('cheerio');
 
-// export function cli(configPath = null) {
-//   const cliPath = path.resolve('./src/cli.js');
-//   const argv = ['node', cliPath];
-//
-//   if (configPath) {
-//     configPath = path.resolve(configPath);
-//     argv.push('-c', configPath);
-//     console.log(`process: ${configPath}`);
-//   }
-//
-//   const cli = new ESDocCLI(argv);
-//   consoleLogSwitch(false);
-//   cli.exec();
-//   consoleLogSwitch(true);
-// }
-
-export function readDoc(fileName, dirName = './test/fixture/out') {
+function readDoc(fileName, dirName = './test/fixture/out') {
   const html = fs.readFileSync(`${dirName}/${fileName}`, {encoding: 'utf-8'});
   const $ = cheerio.load(html);
   return $('html').first();
 }
 
-export function find($el, selector, callback) {
+function find($el, selector, callback) {
   const $els = $el.find(selector);
   if (!$els.length) _assert(false, `node is not found. selector = "${selector}"`);
   if ($els.length !== 1) _assert(false, `many nodes are found. selector = "${selector}"`);
@@ -34,7 +16,7 @@ export function find($el, selector, callback) {
   callback($els.first());
 }
 
-export function findParent($el, selector, parentSelector, callback) {
+function findParent($el, selector, parentSelector, callback) {
   find($el, selector, ($child)=>{
     const $parents = $child.parents(parentSelector);
 
@@ -106,13 +88,7 @@ _assert.notIncludes = function($el, selector, expect, attr) {
   _assert(actual.includes(expect) === false, `selector: "${selector}"`);
 };
 
-export const assert = _assert;
-
-// const consoleLog = console.log;
-// export function consoleLogSwitch(on) {
-//   if (on) {
-//     console.log = consoleLog;
-//   } else {
-//     console.log = ()=>{};
-//   }
-// }
+exports.assert = _assert;
+exports.readDoc = readDoc;
+exports.find = find;
+exports.findParent = findParent;

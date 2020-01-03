@@ -1,4 +1,4 @@
-import {readDoc, assert} from './../../util.js';
+const {readDoc, assert} = require('./../../util.js');
 
 /** @test {ClassDoc#@_name} */
 describe('TestExportAnonymousClass', ()=> {
@@ -6,7 +6,7 @@ describe('TestExportAnonymousClass', ()=> {
 
   describe('in self detail', ()=> {
     it('is named with anonymous.', ()=> {
-      assert.includes(doc, '[data-ice="importPath"]', `import AnonymousClass from 'esdoc-test-fixture/src/Export/AnonymousClass.js'`);
+      assert.includes(doc, '[data-ice="importPath"]', `import AnonymousClass from '@itsjamie/esdoc-test-fixture/src/Export/AnonymousClass.js'`);
       assert.includes(doc, '.self-detail [data-ice="name"]', 'AnonymousClass');
     });
   });

@@ -1,4 +1,4 @@
-import {readDoc, assert, find, findParent} from './../../util.js';
+const {readDoc, assert, find, findParent} = require('./../../util.js');
 
 /**
  * @test {DocFactory#_inspectExportDefaultDeclaration}
@@ -32,7 +32,7 @@ describe('test default export with new expression and property.', ()=> {
 
     findParent(doc, '#static-variable-testExportNewExpressionProperty', '[data-ice="detail"]', (doc)=>{
       assert.includes(doc, 'h3', 'public testExportNewExpressionProperty: TestExportNewExpressionProperty');
-      assert.includes(doc, '[data-ice="importPath"]', `import testExportNewExpressionProperty from 'esdoc-test-fixture/src/Export/NewExpressionProperty.js'`);
+      assert.includes(doc, '[data-ice="importPath"]', `import testExportNewExpressionProperty from '@itsjamie/esdoc-test-fixture/src/Export/NewExpressionProperty.js'`);
     });
   });
 });

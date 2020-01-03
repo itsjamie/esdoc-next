@@ -59,6 +59,7 @@ class InvalidCodeLogger {
    */
   showFile(filePath, error) {
     const lines = fs.readFileSync(filePath).toString().split('\n');
+    console.log(error);
     const start = Math.max(error.loc.line - 3, 1);
     const end = Math.min(error.loc.line + 3, lines.length);
     const targetLines = [];

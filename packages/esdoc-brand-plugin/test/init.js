@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const ESDocCLI = require('@itsjamie/esdoc-cli/cli.js');
+const ESDocCLI = require('@itsjamie/esdoc-cli');
 
 function cli() {
   const cliPath = path.resolve('./node_modules/@itjamie/esdoc-cli/cli.js');

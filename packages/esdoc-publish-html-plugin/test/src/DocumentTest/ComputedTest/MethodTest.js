@@ -1,5 +1,5 @@
 /* eslint-disable no-template-curly-in-string, no-multi-spaces */
-import {readDoc, assert, find} from './../../util.js';
+const {readDoc, assert, find} = require('./../../util.js');
 
 /** @test {MethodDoc#@_name} */
 describe('TestComputedMethod:', ()=> {

@@ -1,4 +1,4 @@
-import {readDoc, assert, find, findParent} from './../../util.js';
+const {readDoc, assert, find, findParent} = require('./../../util.js');
 
 /**
  * @test {DocFactory#_inspectExportDefaultDeclaration}
@@ -32,7 +32,7 @@ describe('test default export with new expression and indirect.', ()=> {
 
     findParent(doc, '#static-variable-testExportNewExpressionIndirect', '[data-ice="detail"]', (doc)=>{
       assert.includes(doc, 'h3', 'public testExportNewExpressionIndirect: TestExportNewExpressionIndirect');
-      assert.includes(doc, '[data-ice="importPath"]', `import testExportNewExpressionIndirect from 'esdoc-test-fixture/src/Export/NewExpressionIndirect.js'`);
+      assert.includes(doc, '[data-ice="importPath"]', `import testExportNewExpressionIndirect from '@itsjamie/esdoc-test-fixture/src/Export/NewExpressionIndirect.js'`);
     });
   });
 });

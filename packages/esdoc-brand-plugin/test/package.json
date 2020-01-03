@@ -6,8 +6,5 @@
   "author": {
     "name": "h13i32maru",
     "url": "http://h13i32maru.jp"
-  },
-  "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.0.0"
   }
 }

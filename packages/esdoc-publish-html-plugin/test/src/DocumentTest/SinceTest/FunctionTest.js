@@ -1,4 +1,4 @@
-import {readDoc, assert, findParent} from './../../util.js';
+const {readDoc, assert, findParent} = require('./../../util.js');
 
 /** @test {AbstractDoc#@since} */
 describe('testSinceFunction', ()=> {

@@ -1,5 +1,5 @@
-import fs from 'fs';
-import assert from 'assert';
+const fs = require('fs');
+const assert = require('assert');
 
 describe('test search', ()=>{
   const searchIndexJS = fs.readFileSync('./test/fixture/out/script/search_index.js', {encoding: 'utf8'}).toString();
@@ -19,9 +19,9 @@ describe('test search', ()=>{
 
   it('has class index', ()=>{
     assert.deepEqual(find(searchIndex, 'class/src/Desc/Class.js~TestDescClass.html'), [
-      'esdoc-test-fixture/src/desc/class.js~testdescclass',
+      '@itsjamie/esdoc-test-fixture/src/desc/class.js~testdescclass',
       'class/src/Desc/Class.js~TestDescClass.html',
-      '<span>TestDescClass</span> <span class="search-result-import-path">esdoc-test-fixture/src/Desc/Class.js</span>',
+      '<span>TestDescClass</span> <span class="search-result-import-path">@itsjamie/esdoc-test-fixture/src/Desc/Class.js</span>',
       'class'
     ]);
   });
@@ -46,27 +46,27 @@ describe('test search', ()=>{
 
   it('has interface index', ()=>{
     assert.deepEqual(find(searchIndex, 'class/src/Interface/Definition.js~TestInterfaceDefinition.html'), [
-      'esdoc-test-fixture/src/interface/definition.js~testinterfacedefinition',
+      '@itsjamie/esdoc-test-fixture/src/interface/definition.js~testinterfacedefinition',
       'class/src/Interface/Definition.js~TestInterfaceDefinition.html',
-      '<span>TestInterfaceDefinition</span> <span class="search-result-import-path">esdoc-test-fixture/src/Interface/Definition.js</span>',
+      '<span>TestInterfaceDefinition</span> <span class="search-result-import-path">@itsjamie/esdoc-test-fixture/src/Interface/Definition.js</span>',
       'class'
     ]);
   });
 
   it('has function index', ()=>{
     assert.deepEqual(find(searchIndex, 'function/index.html#static-function-testDescFunction'), [
-      'esdoc-test-fixture/src/desc/function.js~testdescfunction',
+      '@itsjamie/esdoc-test-fixture/src/desc/function.js~testdescfunction',
       'function/index.html#static-function-testDescFunction',
-      '<span>testDescFunction</span> <span class="search-result-import-path">esdoc-test-fixture/src/Desc/Function.js</span>',
+      '<span>testDescFunction</span> <span class="search-result-import-path">@itsjamie/esdoc-test-fixture/src/Desc/Function.js</span>',
       'function'
     ]);
   });
 
   it('has variable index', ()=>{
     assert.deepEqual(find(searchIndex, 'variable/index.html#static-variable-testDescVariable'), [
-      'esdoc-test-fixture/src/desc/variable.js~testdescvariable',
+      '@itsjamie/esdoc-test-fixture/src/desc/variable.js~testdescvariable',
       'variable/index.html#static-variable-testDescVariable',
-      '<span>testDescVariable</span> <span class="search-result-import-path">esdoc-test-fixture/src/Desc/Variable.js</span>',
+      '<span>testDescVariable</span> <span class="search-result-import-path">@itsjamie/esdoc-test-fixture/src/Desc/Variable.js</span>',
       'variable'
     ]);
   });

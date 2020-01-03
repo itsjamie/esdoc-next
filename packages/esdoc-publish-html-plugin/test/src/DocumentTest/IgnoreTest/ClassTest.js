@@ -1,4 +1,4 @@
-import {readDoc, assert, find} from './../../util.js';
+const {readDoc, assert, find} = require('./../../util.js');
 
 /** @test {DocResolver#_resolveIgnore */
 describe('test ignore class', ()=>{

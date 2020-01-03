@@ -1,4 +1,4 @@
-import {readDoc, assert} from './../util.js';
+const {readDoc, assert} = require('./../util.js');
 
 /** @test {FileDocBuilder} */
 describe('test source code file', ()=> {

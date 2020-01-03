@@ -8,7 +8,7 @@ class Plugin {
     if (option.all || option.classProperties) plugins.push('classProperties');
     if (option.all || option.classPrivateProperties) plugins.push('classPrivateProperties');
     if (option.all || option.classPrivateMethods) plugins.push('classPrivateMethods');
-    if (option.all || option.decorators) plugins.push('decorators');
+    if (option.all || option.decorators) plugins.push(['decorators', { "decoratorsBeforeExport": true }]);
     if (option.all || option.doExpressions) plugins.push('doExpressions');
     if (option.all || option.dynamicImport) plugins.push('dynamicImport');
     if (option.all || option.exportDefaultFrom) plugins.push('exportDefaultFrom');
@@ -23,7 +23,6 @@ class Plugin {
     if (option.all || option.optionalCatchBinding) plugins.push('optionalCatchBinding');
     if (option.all || option.optionalChaining) plugins.push('optionalChaining');
     if (option.all || option.partialApplication) plugins.push('partialApplication');
-    if (option.all || option.pipelineOperator) plugins.push('pipelineOperator');
     if (option.all || option.throwExpressions) plugins.push('throwExpressions');
     if (option.all || option.topLevelAwait) plugins.push('topLevelAwait');
   }
