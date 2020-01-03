@@ -1,4 +1,4 @@
-import path from 'path';
+const path = require('path');
 
 /**
  * Plugin system for your plugin.
@@ -167,7 +167,7 @@ class Plugin {
 /**
  * Plugin Event class.
  */
-export class PluginEvent {
+class PluginEvent {
   /**
    * create instance.
    * @param {Object} data - event content.
@@ -184,4 +184,5 @@ function copy(obj) {
 /**
  * Instance of Plugin class.
  */
-export default new Plugin();
+exports.Plugin = new Plugin();
+exports.PluginEvent = PluginEvent;

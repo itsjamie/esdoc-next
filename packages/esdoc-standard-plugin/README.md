@@ -11,7 +11,7 @@ npm install esdoc-standard-plugin
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-standard-plugin",
+      "name": "@itsjamie/esdoc-standard-plugin",
       "option": {
         "lint": {"enable": true},
         "coverage": {"enable": true},

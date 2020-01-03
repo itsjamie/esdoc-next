@@ -2,17 +2,20 @@
 **This is Proof of Concept**
 ## Install
 ```bash
-npm install esdoc-type-inference-plugin
+npm install @itsjamie/esdoc-type-inference-plugin
 ```
 
 ## Config
 ```json
 {
-  "source": "./src",
-  "destination": "./doc",
-  "plugins": [
-    {"name": "esdoc-type-inference-plugin", "option": {"enable": true}}
-  ]
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+        {
+            "name": "@itsjamie/esdoc-type-inference-plugin", 
+            "option": {"enable": true}
+        }
+    ]
 }
 ```
 

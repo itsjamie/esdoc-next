@@ -1,14 +1,13 @@
-import IceCap from 'ice-cap';
-import path from 'path';
-import {Buffer} from 'buffer';
-import cheerio from 'cheerio';
-import DocBuilder from './DocBuilder.js';
-import {markdown, escapeURLHash} from './util.js';
+const IceCap = require('ice-cap').default;
+const path = require('path');
+const cheerio = require('cheerio');
+const DocBuilder = require('./DocBuilder.js');
+const { markdown } = require('./util.js');
 
 /**
  * Manual Output Builder class.
  */
-export default class ManualDocBuilder extends DocBuilder {
+class ManualDocBuilder extends DocBuilder {
   exec(writeFile, copyDir, readFile) {
 
     const manuals = this._tags.filter(tag => tag.kind === 'manual');
@@ -230,3 +229,5 @@ export default class ManualDocBuilder extends DocBuilder {
     return `manual/${fileName}.html`;
   }
 }
+
+module.exports = ManualDocBuilder;

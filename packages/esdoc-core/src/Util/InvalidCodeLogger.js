@@ -1,4 +1,4 @@
-import fs from 'fs-extra';
+const fs = require('fs-extra');
 
 /**
  * logger for invalid code which can not be parsed with ESDoc.
@@ -77,4 +77,4 @@ class InvalidCodeLogger {
 /**
  * singleton for {@link InvalidCodeLogger}
  */
-export default new InvalidCodeLogger();
+module.exports = new InvalidCodeLogger();

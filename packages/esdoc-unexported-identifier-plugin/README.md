@@ -7,11 +7,14 @@ npm install esdoc-unexported-identifier-plugin
 ## Config
 ```json
 {
-  "source": "./src",
-  "destination": "./doc",
-  "plugins": [
-    {"name": "esdoc-unexported-identifier-plugin", "option": {"enable": false}}
-  ]
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+        {
+            "name": "@itsjamie/esdoc-unexported-identifier-plugin", 
+            "option": {"enable": false}
+        }
+    ]
 }
 ```
 

@@ -10,7 +10,7 @@
 
 ## Install
 ```bash
-npm install esdoc-publish-markdown-plugin
+npm install @itsjamie/esdoc-publish-markdown-plugin
 ```
 
 ## Config
@@ -20,7 +20,7 @@ npm install esdoc-publish-markdown-plugin
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-publish-markdown-plugin",
+      "name": "@itsjamie/esdoc-publish-markdown-plugin",
       "option": {
         "filename":"README.md"
       }

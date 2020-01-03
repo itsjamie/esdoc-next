@@ -1,8 +1,8 @@
-import ESDocCLI from '../../src/ESDocCLI';
-import process from 'process';
-import fs from 'fs';
-import assert from 'assert';
-import path from 'path';
+const ESDocCLI = require('@itsjamie/esdoc-cli');
+const process = require('process');
+const fs = require('fs');
+const assert = require('assert');
+const path = require('path');
 
 describe('test ESDocCLI:', ()=>{
   describe('command option', ()=>{

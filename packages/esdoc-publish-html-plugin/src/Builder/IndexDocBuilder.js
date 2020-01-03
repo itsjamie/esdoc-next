@@ -1,12 +1,12 @@
-import path from 'path';
-import IceCap from 'ice-cap';
-import DocBuilder from './DocBuilder.js';
-import {markdown} from './util.js';
+const path = require('path');
+const IceCap = require('ice-cap').default;
+const DocBuilder = require('./DocBuilder.js');
+const {markdown} = require('./util.js');
 
 /**
  * Index output builder class.
  */
-export default class IndexDocBuilder extends DocBuilder {
+class IndexDocBuilder extends DocBuilder {
   exec(writeFile, copyDir) {
     const ice = this._buildLayoutDoc();
     const title = this._getTitle('Home');
@@ -38,3 +38,5 @@ export default class IndexDocBuilder extends DocBuilder {
     return ice.html;
   }
 }
+
+module.exports = IndexDocBuilder;

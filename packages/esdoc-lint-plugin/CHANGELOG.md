@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0 (2019-12-29)
+
+Released under new monorepo structure.
+
+# Old changelog
+
 ## Next
 - **Fix**
   - Crash if export with variable (e.g. `/** foo */ export const foo = (p)=>{}`) ([#48](https://github.com/esdoc/esdoc-plugins/pull/48)). Thanks [@paztis](https://github.com/paztis)

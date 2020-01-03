@@ -1,10 +1,10 @@
-import fs from 'fs';
-import AbstractDoc from './AbstractDoc.js';
+const fs = require('fs');
+const AbstractDoc = require('./AbstractDoc.js');
 
 /**
  * Doc Class from source file.
  */
-export default class FileDoc extends AbstractDoc {
+class FileDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -45,3 +45,5 @@ export default class FileDoc extends AbstractDoc {
     this._value.content = content;
   }
 }
+
+module.exports = FileDoc;

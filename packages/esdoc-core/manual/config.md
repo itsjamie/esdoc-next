@@ -10,9 +10,11 @@ Introduce config files of ESDoc with esdoc-standard-plugin.
 ## Minimum Config
 ```json
 {
-  "source": "./src",
-  "destination": "./docs",
-  "plugins": [{"name": "esdoc-standard-plugin"}]
+    "source": "./src",
+    "destination": "./docs",
+    "plugins": [
+        {"name": "@itsjamie/esdoc-standard-plugin"}
+    ]
 }
 ```
 
@@ -23,7 +25,7 @@ Introduce config files of ESDoc with esdoc-standard-plugin.
   "destination": "./docs",
   "plugins": [
   {
-    "name": "esdoc-standard-plugin",
+    "name": "@itsjamie/esdoc-standard-plugin",
     "option": {
       "test": {
         "source": "./test/",
@@ -56,7 +58,7 @@ describe('MyClass has foo bar feature', ()=>{
   "destination": "./docs",
   "plugins": [
   {
-    "name": "esdoc-standard-plugin",
+    "name": "@itsjamie/esdoc-standard-plugin",
     "option": {
       "manual": {
         "index": "./manual/index.md",
@@ -79,45 +81,47 @@ describe('MyClass has foo bar feature', ()=>{
 ## Full Config
 ```json
 {
-  "source": "./src",
-  "destination": "./docs",
-  "includes": ["\\.js$"],
-  "excludes": ["\\.config\\.js$"],
-  "plugins": [
-  {
-    "name": "esdoc-standard-plugin",
-    "option": {
-      "lint": {"enable": true},
-      "coverage": {"enable": true},
-      "accessor": {"access": ["public", "protected", "package", "private"], "autoPrivate": true},
-      "undocumentIdentifier": {"enable": true},
-      "unexportedIdentifier": {"enable": false},
-      "typeInference": {"enable": true},
-      "brand": {
-        "logo": "./logo.png",
-        "title": "My Library",
-        "description": "this is awesome library",
-        "repository": "https://github.com/foo/bar",
-        "site": "http://my-library.org",
-        "author": "https://twitter.com/foo",
-        "image": "http://my-library.org/logo.png"
-      },
-      "manual": {
-        "index": "./manual/index.md",
-        "globalIndex": true,
-        "asset": "./manual/asset",
-        "files": [
-          "./manual/overview.md"
-        ]
-      },
-      "test": {
-        "source": "./test/",
-        "interfaces": ["describe", "it", "context", "suite", "test"],
-        "includes": ["(spec|Spec|test|Test)\\.js$"],
-        "excludes": ["\\.config\\.js$"]
-      }
-    }
-  }] 
+    "source": "./src",
+    "destination": "./docs",
+    "includes": ["\\.js$"],
+    "excludes": ["\\.config\\.js$"],
+    "plugins": [{
+        "name": "@itsjamie/esdoc-standard-plugin",
+        "option": {
+            "lint": {"enable": true},
+            "coverage": {"enable": true},
+            "accessor": {
+                "access": ["public", "protected", "package", "private"], 
+                "autoPrivate": true
+            },
+            "undocumentIdentifier": {"enable": true},
+            "unexportedIdentifier": {"enable": false},
+            "typeInference": {"enable": true},
+            "brand": {
+                "logo": "./logo.png",
+                "title": "My Library",
+                "description": "this is awesome library",
+                "repository": "https://github.com/foo/bar",
+                "site": "http://my-library.org",
+                "author": "https://twitter.com/foo",
+                "image": "http://my-library.org/logo.png"
+            },
+            "manual": {
+                "index": "./manual/index.md",
+                "globalIndex": true,
+                "asset": "./manual/asset",
+                "files": [
+                    "./manual/overview.md"
+                ]
+            },
+            "test": {
+                "source": "./test/",
+                "interfaces": ["describe", "it", "context", "suite", "test"],
+                "includes": ["(spec|Spec|test|Test)\\.js$"],
+                "excludes": ["\\.config\\.js$"]
+            }
+        }
+    }] 
 }
 ```
 

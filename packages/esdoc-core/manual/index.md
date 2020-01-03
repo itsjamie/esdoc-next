@@ -30,7 +30,7 @@ npm install esdoc esdoc-standard-plugin
 echo '{
   "source": "./src",
   "destination": "./docs",
-  "plugins": [{"name": "esdoc-standard-plugin"}]
+  "plugins": [{"name": "@itsjamie/esdoc-standard-plugin"}]
 }' > .esdoc.json
 
 # run ESDoc

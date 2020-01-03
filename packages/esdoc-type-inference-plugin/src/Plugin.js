@@ -1,5 +1,6 @@
-const ASTNodeContainer = require('esdoc/out/src/Util/ASTNodeContainer.js').default;
-const ASTUtil = require('esdoc/out/src/Util/ASTUtil').default;
+const logger = require('color-logger').default;
+const ASTNodeContainer = require('@itsjamie/esdoc-core/src/Util/ASTNodeContainer.js');
+const ASTUtil = require('@itsjamie/esdoc-core/src/Util/ASTUtil.js');
 
 class Plugin {
   onHandleDocs(ev) {

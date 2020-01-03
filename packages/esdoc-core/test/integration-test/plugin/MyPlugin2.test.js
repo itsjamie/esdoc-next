@@ -1,4 +1,4 @@
-import assert from 'assert';
+const assert = require('assert');
 
 describe('test/plugin/MyPlugin2:', ()=>{
   it('calls handlers', ()=>{

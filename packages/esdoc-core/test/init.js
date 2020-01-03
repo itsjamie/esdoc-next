@@ -1,8 +1,8 @@
-import fs from 'fs';
-import path from 'path';
-import ESDocCLI from '../src/ESDocCLI.js';
+const fs = require('fs');
+const path = require('path');
+const ESDocCLI = require('@itsjamie/esdoc-cli');
 
-export function cli(configPath) {
+function cli(configPath) {
   const cliPath = path.resolve('./src/cli.js');
   const argv = ['node', cliPath];
 

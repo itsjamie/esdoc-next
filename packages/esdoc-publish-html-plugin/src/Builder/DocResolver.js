@@ -1,9 +1,9 @@
-import {markdown} from './util.js';
+const { markdown } = require('./util.js');
 
 /**
  * Resolve various properties in doc object.
  */
-export default class DocResolver {
+class DocResolver {
   /**
    * create instance.
    * @param {DocBuilder} builder - target doc builder.
@@ -356,3 +356,5 @@ export default class DocResolver {
     this._data.__RESOLVED_TEST_RELATION__ = true;
   }
 }
+
+module.exports = DocResolver;

@@ -1,24 +1,24 @@
 {
-  "name": "esdoc-inject-gtm-plugin",
+  "name": "@itsjamie/esdoc-inject-gtm-plugin",
   "description": "A inject google-tag-manager plugin for ESDoc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "9renpoto",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^4.0.1"
   },
   "devDependencies": {
-    "esdoc": "latest",
+    "@itsjamie/esdoc-core": "^0.1.0",
     "mocha": "^3.5.0"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 10.0.0"
   },
   "files": [
     "src",
     "README.md"
   ],
-  "homepage": "https://github.com/esdoc/esdoc-plugins",
+  "homepage": "https://github.com/itsjamie/esdoc-next",
   "keywords": [
     "esdoc",
     "inject",
@@ -29,9 +29,12 @@
   "main": "src/Plugin.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/esdoc/esdoc-plugins"
+    "url": "https://github.com/itsjamie/esdoc-next"
   },
   "scripts": {
     "test": "rm -rf ./test/out && mocha --require ./test/init.js $(find test/ -regex '.*.test.js$') -R spec"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

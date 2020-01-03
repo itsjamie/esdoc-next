@@ -1,7 +1,7 @@
 # ESDoc Accessor Plugin
 ## Install
 ```bash
-npm install esdoc-accessor-plugin
+npm install @itsjamie/esdoc-accessor-plugin
 ```
 
 ## Config
@@ -10,7 +10,13 @@ npm install esdoc-accessor-plugin
   "source": "./src",
   "destination": "./doc",
   "plugins": [
-    {"name": "esdoc-accessor-plugin", "option": {"access": ["public", "protected", "private"], "autoPrivate": true}}
+    {
+        "name": "@itsjamie/esdoc-accessor-plugin", 
+        "option": {
+            "access": ["public", "protected", "private"],
+            "autoPrivate": true
+        }
+    }
   ]
 }
 ```

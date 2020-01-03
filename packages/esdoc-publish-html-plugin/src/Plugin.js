@@ -1,18 +1,18 @@
-import path from 'path';
-import {taffy} from 'taffydb';
-import IceCap from 'ice-cap';
-import DocBuilder from './Builder/DocBuilder';
-import StaticFileBuilder from './Builder/StaticFileBuilder.js';
-import IdentifiersDocBuilder from './Builder/IdentifiersDocBuilder.js';
-import IndexDocBuilder from './Builder/IndexDocBuilder.js';
-import ClassDocBuilder from './Builder/ClassDocBuilder.js';
-import SingleDocBuilder from './Builder/SingleDocBuilder.js';
-import FileDocBuilder from './Builder/FileDocBuilder.js';
-import SearchIndexBuilder from './Builder/SearchIndexBuilder.js';
-import SourceDocBuilder from './Builder/SourceDocBuilder.js';
-import TestDocBuilder from './Builder/TestDocBuilder.js';
-import TestFileDocBuilder from './Builder/TestFileDocBuilder.js';
-import ManualDocBuilder from './Builder/ManualDocBuilder.js';
+const path = require('path');
+const {taffy} = require('taffydb');
+const IceCap = require('ice-cap').default;
+const DocBuilder = require('./Builder/DocBuilder');
+const StaticFileBuilder = require('./Builder/StaticFileBuilder.js');
+const IdentifiersDocBuilder = require('./Builder/IdentifiersDocBuilder.js');
+const IndexDocBuilder = require('./Builder/IndexDocBuilder.js');
+const ClassDocBuilder = require('./Builder/ClassDocBuilder.js');
+const SingleDocBuilder = require('./Builder/SingleDocBuilder.js');
+const FileDocBuilder = require('./Builder/FileDocBuilder.js');
+const SearchIndexBuilder = require('./Builder/SearchIndexBuilder.js');
+const SourceDocBuilder = require('./Builder/SourceDocBuilder.js');
+const TestDocBuilder = require('./Builder/TestDocBuilder.js');
+const TestFileDocBuilder = require('./Builder/TestFileDocBuilder.js');
+const ManualDocBuilder = require('./Builder/ManualDocBuilder.js');
 
 class Plugin {
   onHandleDocs(ev) {

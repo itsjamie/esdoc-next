@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0 (2019-12-29)
+
+Released under new monorepo structure.
+
+# Old Changelog
+
 ## Next
 - **Fix**
   - Crash if object key includes a comma ([#49](https://github.com/esdoc/esdoc-plugins/pull/49)). Thanks [@josephschmitt](https://github.com/josephschmitt)

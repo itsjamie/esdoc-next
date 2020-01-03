@@ -1,17 +1,22 @@
 # ESDoc JSX Plugin
 ## Install
 ```bash
-npm install esdoc-jsx-plugin
+npm install @itsjamie/esdoc-jsx-plugin
 ```
 
 ## Config
 ```json
 {
-  "source": "./src",
-  "destination": "./doc",
-  "plugins": [
-    {"name": "esdoc-jsx-plugin", "option": {"enable": true}}
-  ]
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+        {
+            "name": "@itsjamie/esdoc-jsx-plugin", 
+            "option": {
+                "enable": true
+            }
+        }
+    ]
 }
 ```
 

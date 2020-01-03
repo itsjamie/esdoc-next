@@ -1,16 +1,16 @@
 /* eslint-disable max-lines */
-import fs from 'fs';
-import path from 'path';
-import escape from 'escape-html';
-import IceCap from 'ice-cap';
-import {shorten, parseExample, escapeURLHash} from './util.js';
-import DocResolver from './DocResolver.js';
-import NPMUtil from 'esdoc/out/src/Util/NPMUtil.js';
+const fs = require('fs');
+const path = require('path');
+const escape = require('escape-html');
+const IceCap = require('ice-cap').default;
+const { shorten, parseExample, escapeURLHash } = require('./util.js');
+const DocResolver = require('./DocResolver.js');
+const NPMUtil = require('@itsjamie/esdoc-core/src/Util/NPMUtil.js');
 
 /**
  * Builder base class.
  */
-export default class DocBuilder {
+class DocBuilder {
   /**
    * create instance.
    * @param {String} template - template absolute path
@@ -1039,3 +1039,5 @@ export default class DocBuilder {
   //  return `<ul>${html.join(separator)}</ul>`;
   // }
 }
+
+module.exports = DocBuilder;

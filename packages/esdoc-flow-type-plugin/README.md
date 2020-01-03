@@ -3,17 +3,22 @@
 
 ## Install
 ```bash
-npm install esdoc-flow-type-plugin
+npm install @itsjamie/esdoc-flow-type-plugin
 ```
 
 ## Config
 ```json
 {
-  "source": "./src",
-  "destination": "./doc",
-  "plugins": [
-    {"name": "esdoc-flow-type-plugin", "option": {"enable": true}}
-  ]
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+        { 
+            "name": "@itsjamie/esdoc-flow-type-plugin", 
+            "option": {
+                "enable": true
+            }
+        }
+    ]
 }
 ```
 

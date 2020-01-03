@@ -1,12 +1,12 @@
-import fs from 'fs';
-import IceCap from 'ice-cap';
-import DocBuilder from './DocBuilder.js';
-import {dateForUTC} from './util.js';
+const fs = require('fs');
+const IceCap = require('ice-cap').default;
+const DocBuilder = require('./DocBuilder.js');
+const { dateForUTC } = require('./util.js');
 
 /**
  * Source output html builder class.
  */
-export default class SourceDocBuilder extends DocBuilder {
+class SourceDocBuilder extends DocBuilder {
   exec(writeFile, copyDir, coverage) {
     this._coverage = coverage;
     const ice = this._buildLayoutDoc();
@@ -86,3 +86,5 @@ export default class SourceDocBuilder extends DocBuilder {
     return ice.html;
   }
 }
+
+module.exports = SourceDocBuilder;

@@ -1,5 +1,5 @@
-import assert from 'assert';
-import {find} from '../../util';
+const assert = require('assert');
+const {find} = require('../../util');
 
 describe('test/_Misc/Exclude:', ()=>{
   it('not exist', ()=>{

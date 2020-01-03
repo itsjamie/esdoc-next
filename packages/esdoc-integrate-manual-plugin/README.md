@@ -1,7 +1,7 @@
 # ESDoc Integrate Manual Plugin
 ## Install
 ```bash
-npm install esdoc-integrate-manual-plugin
+npm install @itsjamie/esdoc-integrate-manual-plugin
 ```
 
 ## Config
@@ -11,7 +11,7 @@ npm install esdoc-integrate-manual-plugin
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-integrate-manual-plugin",
+      "name": "@itsjamie/esdoc-integrate-manual-plugin",
       "option": {
         "index": "./manual/index.md",
         "globalIndex": true,

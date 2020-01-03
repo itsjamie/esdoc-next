@@ -1,11 +1,11 @@
-import AbstractDoc from './AbstractDoc.js';
-import MethodDoc from './MethodDoc.js';
-import babelGenerator from '@babel/generator';
+const AbstractDoc = require('./AbstractDoc.js');
+const MethodDoc = require('./MethodDoc.js');
+const babelGenerator = require('@babel/generator').default;
 
 /**
  * Doc Class from Member Expression AST node.
  */
-export default class MemberDoc extends AbstractDoc {
+class MemberDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -56,3 +56,5 @@ export default class MemberDoc extends AbstractDoc {
     Reflect.apply(MethodDoc.prototype._$memberof, this, []);
   }
 }
+
+module.exports = MemberDoc;

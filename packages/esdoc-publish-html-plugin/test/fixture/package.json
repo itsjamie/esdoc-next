@@ -1,8 +1,8 @@
 {
-  "name": "esdoc-test-fixture",
+  "name": "@itsjamie/esdoc-test-fixture",
   "version": "1.2.3",
   "private": true,
-  "description": "this is esdoc-publish-html-plugin fixture",
+  "description": "This is esdoc-publish-html-plugin fixture",
   "author": {
     "name": "h13i32maru",
     "url": "http://h13i32maru.jp"

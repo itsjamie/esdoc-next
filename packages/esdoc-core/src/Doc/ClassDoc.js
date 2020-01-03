@@ -1,12 +1,12 @@
-import fs from 'fs-extra';
-import AbstractDoc from './AbstractDoc.js';
-import ParamParser from '../Parser/ParamParser.js';
-import NamingUtil from '../Util/NamingUtil.js';
+const fs = require('fs-extra');
+const AbstractDoc = require('./AbstractDoc.js');
+const ParamParser = require('../Parser/ParamParser.js');
+const NamingUtil = require('../Util/NamingUtil.js');
 
 /**
  * Doc Class from Class Declaration AST node.
  */
-export default class ClassDoc extends AbstractDoc {
+class ClassDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -140,3 +140,5 @@ export default class ClassDoc extends AbstractDoc {
     return tmp.join('');
   }
 }
+
+module.exports = ClassDoc;

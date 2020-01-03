@@ -1,11 +1,10 @@
-import path from 'path';
-
+const path = require('path');
 const filePathMap = {};
 
 /**
  * Identifier Naming Util class.
  */
-export default class NamingUtil {
+class NamingUtil {
   /**
    * naming with file path.
    * @param {string} filePath - target file path.
@@ -23,3 +22,5 @@ export default class NamingUtil {
     return basename;
   }
 }
+
+module.exports = NamingUtil;

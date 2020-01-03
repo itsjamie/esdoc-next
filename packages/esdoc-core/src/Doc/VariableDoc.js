@@ -1,9 +1,9 @@
-import AbstractDoc from './AbstractDoc.js';
+const AbstractDoc = require('./AbstractDoc.js');
 
 /**
  * Doc Class from Variable Declaration AST node.
  */
-export default class VariableDoc extends AbstractDoc {
+class VariableDoc extends AbstractDoc {
   /** specify ``variable`` to kind. */
   _$kind() {
     super._$kind();
@@ -42,3 +42,4 @@ export default class VariableDoc extends AbstractDoc {
   }
 }
 
+module.exports = VariableDoc;

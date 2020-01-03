@@ -1,20 +1,20 @@
 {
-  "name": "esdoc-unexported-identifier-plugin",
-  "version": "1.0.0",
+  "name": "@itsjamie/esdoc-unexported-identifier-plugin",
+  "version": "0.1.0",
   "description": "A unexported identifier plugin for ESDoc",
   "author": "h13i32maru",
-  "homepage": "https://github.com/esdoc/esdoc-plugins",
+  "homepage": "https://github.com/itsjamie/esdoc-next",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/esdoc/esdoc-plugins"
+    "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "esdoc": "latest",
+    "@itsjamie/esdoc-core": "^0.1.0",
     "mocha": "2.5.3"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 10.0.0"
   },
   "scripts": {
     "test": "rm -rf ./test/out && mocha --require ./test/init.js $(find test/ -regex '.*.test.js$') -R spec"
@@ -28,5 +28,8 @@
     "src",
     "README.md"
   ],
-  "main": "src/Plugin.js"
+  "main": "src/Plugin.js",
+  "publishConfig": {
+    "access": "public"
+  }
 }

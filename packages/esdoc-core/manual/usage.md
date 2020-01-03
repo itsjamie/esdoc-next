@@ -21,7 +21,7 @@ The minimum configuration is the following JSON. All configurations are [here](.
   "source": "./src",
   "destination": "./docs",
   "plugins": [
-    {"name": "esdoc-standard-plugin"}
+    {"name": "@itsjamie/esdoc-standard-plugin"}
   ]
 }
 ```

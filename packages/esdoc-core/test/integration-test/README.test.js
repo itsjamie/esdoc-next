@@ -1,5 +1,5 @@
-import assert from 'assert';
-import {find, file} from './util';
+const assert = require('assert');
+const {find, file} = require('./util.js');
 
 describe('test/README.md', ()=>{
   it('has README', ()=>{

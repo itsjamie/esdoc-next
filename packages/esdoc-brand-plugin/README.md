@@ -1,7 +1,7 @@
 # ESDoc Brand Plugin
 ## Install
 ```bash
-npm install esdoc-brand-plugin
+npm install @itsjamie/esdoc-brand-plugin
 ```
 
 ## Config
@@ -13,7 +13,7 @@ This plugin takes a title and a repository from `package.json (name, repsitory)`
   "package.json": "./package.json",
   "plugins": [
     {
-      "name": "esdoc-brand-plugin",
+      "name": "@itsjamie/esdoc-brand-plugin",
       "option": {
         "logo": "./logo.png",
         "title": "My Library",

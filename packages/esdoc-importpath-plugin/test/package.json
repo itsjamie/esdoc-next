@@ -1,4 +1,4 @@
 {
-  "name": "esdoc-importpath-plugin",
+  "name": "@itsjamie/esdoc-importpath-plugin",
   "main": "lib/Index.js"
 }

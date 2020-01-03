@@ -1,10 +1,10 @@
-import path from 'path';
-import fs from 'fs-extra';
+const path = require('path');
+const fs = require('fs-extra');
 
 /**
  * Node Package Manager(npm) util class.
  */
-export default class NPMUtil {
+class NPMUtil {
   /**
    * find ESDoc package.json object.
    * @returns {Object} package.json object.
@@ -24,3 +24,5 @@ export default class NPMUtil {
     return packageObj;
   }
 }
+
+module.exports = NPMUtil;

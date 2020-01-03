@@ -1,10 +1,10 @@
-import AbstractDoc from './AbstractDoc.js';
-import MethodDoc from './MethodDoc.js';
+const AbstractDoc = require('./AbstractDoc.js');
+const MethodDoc = require('./MethodDoc.js');
 
 /**
  * Doc Class from ClassProperty AST node.
  */
-export default class ClassPropertyDoc extends AbstractDoc {
+class ClassPropertyDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -36,3 +36,5 @@ export default class ClassPropertyDoc extends AbstractDoc {
     Reflect.apply(MethodDoc.prototype._$memberof, this, []);
   }
 }
+
+module.exports = ClassPropertyDoc;

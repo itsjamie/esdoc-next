@@ -15,7 +15,7 @@ Therefore, convert the import path by using following setting.
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-importpath-plugin",
+      "name": "@itsjamie/esdoc-importpath-plugin",
       "option": {
         "stripPackageName": false,
         "replaces": [
@@ -40,7 +40,7 @@ This is useful for projects that have custom module resolvers where you want to 
 
 ## Install
 ```sh
-npm install esdoc-importpath-plugin
+npm install @itsjamie/esdoc-importpath-plugin
 ```
 
 ## Config
@@ -51,7 +51,7 @@ npm install esdoc-importpath-plugin
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-importpath-plugin",
+      "name": "@itsjamie/esdoc-importpath-plugin",
       "option": {
         "replaces": [
           {"from": "^src/", "to": "lib"}

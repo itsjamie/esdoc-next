@@ -1,11 +1,11 @@
-import babelGenerator from '@babel/generator';
-import AbstractDoc from './AbstractDoc.js';
-import NamingUtil from '../Util/NamingUtil.js';
+const babelGenerator = require('@babel/generator').default;
+const AbstractDoc = require('./AbstractDoc.js');
+const NamingUtil = require('../Util/NamingUtil.js');
 
 /**
  * Doc Class from Function declaration AST node.
  */
-export default class FunctionDoc extends AbstractDoc {
+class FunctionDoc extends AbstractDoc {
   /** specify ``function`` to kind. */
   _$kind() {
     super._$kind();
@@ -50,3 +50,5 @@ export default class FunctionDoc extends AbstractDoc {
     this._value.async = this._node.async;
   }
 }
+
+module.exports = FunctionDoc;

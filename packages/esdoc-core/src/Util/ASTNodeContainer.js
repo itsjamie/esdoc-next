@@ -14,4 +14,4 @@ class ASTNodeContainer {
   }
 }
 
-export default new ASTNodeContainer();
+module.exports = new ASTNodeContainer();

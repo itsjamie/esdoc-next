@@ -6,7 +6,6 @@ sh.exec('./script/eslint.js');
 sh.rm('./test/integration-test/out');
 const mochaOptions = [
   '--timeout 0',
-  '--require @babel/register',
   '--require ./test/init.js',
   '$(find test/ -regex \'.*.test.js$\')',
   '-R spec'

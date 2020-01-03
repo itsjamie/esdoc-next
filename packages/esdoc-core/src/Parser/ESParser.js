@@ -1,6 +1,6 @@
-import fs from 'fs-extra';
-import Plugin from '../Plugin/Plugin.js';
-import * as babel from '@babel/parser';
+const fs = require('fs-extra');
+const {Plugin} = require('../Plugin/Plugin.js');
+const babel = require('@babel/parser');
 
 /**
  * ECMAScript Parser class.
@@ -8,7 +8,7 @@ import * as babel from '@babel/parser';
  * @example
  * let ast = ESParser.parse('./src/foo.js');
  */
-export default class ESParser {
+class ESParser {
   /**
    * parse ECMAScript source code.
    * @param {string} filePath - source code file path.
@@ -33,3 +33,5 @@ export default class ESParser {
     return ast;
   }
 }
+
+module.exports = ESParser;

@@ -1,17 +1,23 @@
 # ESDoc Inject Script Plugin
 ## Install
 ```bash
-npm install esdoc-inject-script-plugin
+npm install @itsjamie/esdoc-inject-script-plugin
 ```
 
 ## Config
 ```json
 {
-  "source": "./src",
-  "destination": "./doc",
-  "plugins": [
-    {"name": "esdoc-inject-script-plugin", "option": {"enable": true, "scripts": ["./foo.js"]}}
-  ]
+    "source": "./src",
+    "destination": "./doc",
+    "plugins": [
+        {
+            "name": "@itsjamie/esdoc-inject-script-plugin", 
+            "option": {
+                "enable": true, 
+                "scripts": ["./foo.js"]
+            }
+        }
+    ]
 }
 ```
 

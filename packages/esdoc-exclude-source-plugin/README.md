@@ -1,7 +1,7 @@
 # ESDoc Exclude Source Plugin
 ## Install
 ```bash
-npm install esdoc-exclude-source-plugin
+npm install @itsjamie/esdoc-exclude-source-plugin
 ```
 
 ## Config
@@ -10,7 +10,7 @@ npm install esdoc-exclude-source-plugin
   "source": "./src",
   "destination": "./doc",
   "plugins": [
-    {"name": "esdoc-exclude-source-plugin"}
+    {"name": "@itsjamie/esdoc-exclude-source-plugin"}
   ]
 }
 ```

@@ -7,7 +7,7 @@
  *   console.log(tags);
  * }
  */
-export default class CommentParser {
+class CommentParser {
   /**
    * parse comment to tags.
    * @param {ASTNode} commentNode - comment node.
@@ -92,3 +92,5 @@ export default class CommentParser {
     }, '*\n');
   }
 }
+
+module.exports = CommentParser;

@@ -1,11 +1,11 @@
-import logger from 'color-logger';
-import AbstractDoc from './AbstractDoc.js';
-import ParamParser from '../Parser/ParamParser.js';
+const logger = require('color-logger').default;
+const AbstractDoc = require('./AbstractDoc.js');
+const ParamParser = require('../Parser/ParamParser.js');
 
 /**
  * Doc Class from virtual comment node of external.
  */
-export default class ExternalDoc extends AbstractDoc {
+class ExternalDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -69,3 +69,4 @@ export default class ExternalDoc extends AbstractDoc {
   _$external() {}
 }
 
+module.exports = ExternalDoc;

@@ -1,5 +1,5 @@
-import assert from 'assert';
-import {find} from '../../../util';
+const assert = require('assert');
+const {find} = require('../../../util');
 
 describe('test/Export/IndirectDefault/Function:', ()=>{
   it('is exported', ()=>{

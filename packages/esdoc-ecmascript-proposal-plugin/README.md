@@ -1,7 +1,7 @@
 # ESDoc ECMAScript Proposal Plugin
 ## Install
 ```
-npm install esdoc-ecmascript-proposal-plugin
+npm install @itsjamie/esdoc-ecmascript-proposal-plugin
 ```
 
 ## Config
@@ -10,7 +10,7 @@ npm install esdoc-ecmascript-proposal-plugin
   "source": "./src",
   "destination": "./doc",
   "plugins": [
-    {"name": "esdoc-ecmascript-proposal-plugin", "option": {"all": true}}
+    {"name": "@itsjamie/esdoc-ecmascript-proposal-plugin", "option": {"all": true}}
   ]
 }
 ```
@@ -22,7 +22,7 @@ If you want to enable each proposals,
   "destination": "./doc",
   "plugins": [
     {
-      "name": "esdoc-ecmascript-proposal-plugin",
+      "name": "@itsjamie/esdoc-ecmascript-proposal-plugin",
       "option": {
         "classProperties": true,
         "objectRestSpread": true,

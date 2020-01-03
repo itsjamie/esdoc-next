@@ -1,9 +1,9 @@
-import DocBuilder from './DocBuilder.js';
+const DocBuilder = require('./DocBuilder.js');
 
 /**
  * Search index of identifier builder class.
  */
-export default class SearchIndexBuilder extends DocBuilder {
+class SearchIndexBuilder extends DocBuilder {
   exec(writeFile, copyDir) {
     const searchIndex = [];
     const docs = this._find({});
@@ -72,3 +72,5 @@ export default class SearchIndexBuilder extends DocBuilder {
     writeFile('script/search_index.js', javascript);
   }
 }
+
+module.exports = SearchIndexBuilder;

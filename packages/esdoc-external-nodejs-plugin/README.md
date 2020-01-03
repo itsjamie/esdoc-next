@@ -10,7 +10,7 @@ npm install esdoc-external-nodejs-plugin
   "source": "./src",
   "destination": "./doc",
   "plugins": [
-    {"name": "esdoc-external-nodejs-plugin", "option": {"enable": true}}
+    {"name": "@itsjamie/esdoc-external-nodejs-plugin", "option": {"enable": true}}
   ]
 }
 ```

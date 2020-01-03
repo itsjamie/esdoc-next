@@ -1,12 +1,12 @@
-import IceCap from 'ice-cap';
-import DocBuilder from './DocBuilder.js';
-import path from 'path';
-import {escapeURLHash} from './util';
+const IceCap = require('ice-cap').default;
+const path = require('path');
+const DocBuilder = require('./DocBuilder.js');
+const { escapeURLHash } = require('./util.js');
 
 /**
  * Identifier output builder class.
  */
-export default class IdentifiersDocBuilder extends DocBuilder {
+class IdentifiersDocBuilder extends DocBuilder {
   exec(writeFile, copyDir) {
     const ice = this._buildLayoutDoc();
     const title = this._getTitle('Reference');
@@ -81,3 +81,5 @@ export default class IdentifiersDocBuilder extends DocBuilder {
     return lines.join('\n');
   }
 }
+
+module.exports = IdentifiersDocBuilder;

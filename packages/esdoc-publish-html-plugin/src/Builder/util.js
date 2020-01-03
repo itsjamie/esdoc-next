@@ -1,5 +1,5 @@
-import marked from 'marked';
-import escape from 'escape-html';
+const marked = require('marked');
+const escape = require('escape-html');
 
 /**
  * shorten description.
@@ -10,7 +10,7 @@ import escape from 'escape-html';
  * @returns {string} shorten description.
  * @todo shorten before process markdown.
  */
-export function shorten(doc, asMarkdown = false) {
+function shorten(doc, asMarkdown = false) {
   if (!doc) return '';
 
   if (doc.summary) return doc.summary;
@@ -59,7 +59,7 @@ export function shorten(doc, asMarkdown = false) {
  * @param {boolean} [breaks=false] if true, break line. FYI gfm is not breaks.
  * @return {string} html.
  */
-export function markdown(text, breaks = false) {
+function markdown(text, breaks = false) {
   // original render does not support multi-byte anchor
   const renderer = new marked.Renderer();
   renderer.heading = function (text, level) {
@@ -108,7 +108,7 @@ export function markdown(text, breaks = false) {
  * @param {Date} date - target date object.
  * @returns {string} UTC date string(yyyy-mm-dd hh:mm:ss)
  */
-export function dateForUTC(date) {
+function dateForUTC(date) {
   function pad(num, len) {
     const count = Math.max(0, len - `${num}`.length);
     return '0'.repeat(count) + num;
@@ -131,7 +131,7 @@ export function dateForUTC(date) {
  * @param {string} example - target example value.
  * @returns {{body: string, caption: string}} parsed example value.
  */
-export function parseExample(example) {
+function parseExample(example) {
   let body = example;
   let caption = '';
 
@@ -151,6 +151,12 @@ export function parseExample(example) {
  * @param {string} hash - URL hash for HTML a tag and id tag
  * @returns {string} escaped URL hash
  */
-export function escapeURLHash(hash) {
+function escapeURLHash(hash) {
   return hash.toLowerCase().replace(/[~!@#$%^&*()_+=\[\]\\{}|;':"<>?,.\/ ]/g, '-');
 }
+
+exports.shorten = shorten;
+exports.markdown = markdown;
+exports.dateForUTC = dateForUTC;
+exports.parseExample = parseExample;
+exports.escapeURLHash = escapeURLHash;

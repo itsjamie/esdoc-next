@@ -1,10 +1,10 @@
-import AbstractDoc from './AbstractDoc.js';
-import babelGenerator from '@babel/generator';
+const AbstractDoc = require('./AbstractDoc.js');
+const babelGenerator = require('@babel/generator').default;
 
 /**
  * Doc Class from Method Definition AST node.
  */
-export default class MethodDoc extends AbstractDoc {
+class MethodDoc extends AbstractDoc {
   /**
    * apply own tag.
    * @private
@@ -68,3 +68,5 @@ export default class MethodDoc extends AbstractDoc {
     this._value.async = this._node.async;
   }
 }
+
+module.exports = MethodDoc;

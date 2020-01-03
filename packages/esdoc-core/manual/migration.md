@@ -13,7 +13,7 @@ Please use the plugin with the following config.
 {
   "source": "./src",
   "destination": "./docs",
-  "plugins": [{"name": "esdoc-standard-plugin"}]
+  "plugins": [{"name": "@itsjamie/esdoc-standard-plugin"}]
 }
 ```
 

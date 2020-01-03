@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.1.0 (2019-12-29)
+
+- Version 0.1.0 released at @itsjamie/esdoc-*.
+    - V1 will be released when there is a story for modules support using Node modules. Current modules system takes advantage of the old module resolution algrothim and doesn't work with the new import structure.
+- Forked from https://github.com/DanielRuf/esdoc-next at commit 05005bd85.
+- Changed the repository into a monorepo with Lerna.
+    - The main esdoc repo itself has been split into multiple repos
+        - esdoc-cli
+        - esdoc-core 
+    - Plugins have been brought into the main repo.
+- Esdoc internals no longer use Babel for it's own code.
+    - Feature support in Node is pretty good.
+    - Experimental Modules support is in, and more coming.
+
+# Old Changelog
+
 ## 1.1.0 (2018-04-29)
 - **Feat**
   - Add `config.outputAST` ([#483](https://github.com/esdoc/esdoc/pull/483)). Thanks [@MattMcFarland](https://github.com/MattMcFarland)

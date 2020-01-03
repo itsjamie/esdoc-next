@@ -1,5 +1,5 @@
-import assert from 'assert';
-import {find} from '../../util';
+const assert = require('assert');
+const {find} = require('../../util');
 
 describe('test/Param/Destructuring:', ()=>{
   it('has array destructuring param', ()=>{

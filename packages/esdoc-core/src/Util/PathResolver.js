@@ -1,6 +1,6 @@
-import path from 'path';
-import assert from 'assert';
-import os from 'os';
+const path = require('path');
+const assert = require('assert');
+const os = require('os');
 
 /**
  * file path resolver.
@@ -10,7 +10,7 @@ import os from 'os';
  * pathResolver.filePath; // 'src/foo/bar.js'
  * pathResolver.resolve('./baz.js'); // 'src/foo/baz.js'
  */
-export default class PathResolver {
+class PathResolver {
   /**
    * create instance.
    * @param {string} inDirPath - root directory path.
@@ -103,3 +103,5 @@ export default class PathResolver {
     return filePath;
   }
 }
+
+module.exports = PathResolver;

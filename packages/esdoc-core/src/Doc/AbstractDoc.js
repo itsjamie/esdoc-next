@@ -1,16 +1,16 @@
-import path from 'path';
-import ParamParser from '../Parser/ParamParser.js';
-import ASTUtil from '../Util/ASTUtil.js';
-import InvalidCodeLogger from '../Util/InvalidCodeLogger.js';
-import ASTNodeContainer from '../Util/ASTNodeContainer.js';
-import babelGenerator from '@babel/generator';
-import {name} from '../Factory/DocFactory';
+const path = require('path');
+const ParamParser = require('../Parser/ParamParser.js');
+const ASTUtil = require('../Util/ASTUtil.js');
+const InvalidCodeLogger = require('../Util/InvalidCodeLogger.js');
+const ASTNodeContainer = require('../Util/ASTNodeContainer.js');
+const babelGenerator = require('@babel/generator').default;
+const {name} = require('../Factory/Symbols.js');
 
 /**
  * Abstract Doc Class.
  * @todo rename this class name.
  */
-export default class AbstractDoc {
+class AbstractDoc {
   /**
    * create instance.
    * @param {AST} ast - this is AST that contains this doc.
@@ -720,3 +720,5 @@ export default class AbstractDoc {
     return className;
   }
 }
+
+module.exports = AbstractDoc;

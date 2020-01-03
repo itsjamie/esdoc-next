@@ -1,45 +1,31 @@
 {
-  "name": "esdoc-publish-html-plugin",
-  "version": "1.1.1",
+  "name": "@itsjamie/esdoc-publish-html-plugin",
+  "version": "0.1.0",
   "description": "A publish HTML plugin for ESDoc",
   "author": "h13i32maru",
-  "homepage": "https://github.com/esdoc/esdoc-plugins",
+  "homepage": "https://github.com/itsjamie/esdoc-next",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/esdoc/esdoc-plugins"
+    "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "cheerio": "0.22.0",
-    "fs-extra": "1.0.0",
-    "escape-html": "1.0.3",
     "babel-generator": "6.11.4",
+    "cheerio": "0.22.0",
+    "escape-html": "1.0.3",
+    "fs-extra": "1.0.0",
     "ice-cap": "0.0.4",
     "marked": "0.3.19",
     "taffydb": "2.7.2"
   },
   "devDependencies": {
-    "babel-cli": "6.11.4",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.11.5",
-    "babel-register": "6.11.6",
-    "esdoc": "^1.1.0",
-    "esdoc-accessor-plugin": "^1.0.0",
-    "esdoc-brand-plugin": "^1.0.0",
-    "esdoc-coverage-plugin": "^1.1.0",
-    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
-    "esdoc-external-ecmascript-plugin": "^1.0.0",
-    "esdoc-integrate-manual-plugin": "^1.0.0",
-    "esdoc-integrate-test-plugin": "^1.0.0",
-    "esdoc-type-inference-plugin": "^1.0.1",
-    "esdoc-undocumented-identifier-plugin": "^1.0.0",
-    "esdoc-unexported-identifier-plugin": "^1.0.0",
+    "@itsjamie/esdoc-core": "^0.1.0",
     "mocha": "2.5.3"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 10.0.0"
   },
   "scripts": {
-    "build": "rm -rf ./out/src && babel --out-dir out/src --ignore 'Builder/template' src && cp -a src/Builder/template out/src/Builder/",
     "test": "rm -rf ./test/fixture/out && mocha -t 10000 --require ./node_modules/babel-register --require ./test/src/init.js --recursive ./test/src -R spec"
   },
   "keywords": [
@@ -49,8 +35,11 @@
     "plugin"
   ],
   "files": [
-    "out/src",
+    "src",
     "README.md"
   ],
-  "main": "out/src/Plugin.js"
+  "main": "src/Plugin.js",
+  "publishConfig": {
+    "access": "public"
+  }
 }

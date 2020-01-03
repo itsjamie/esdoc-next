@@ -1,10 +1,10 @@
-import babelTraverse from '@babel/traverse';
-import {name} from '../Factory/DocFactory';
+const babelTraverse = require('@babel/traverse').default;
+const {name} = require('../Factory/Symbols.js');
 
 /**
  * Utility for AST.
  */
-export default class ASTUtil {
+class ASTUtil {
   /**
    * sanitize node.
    * change node type to `Identifier` and empty comment.
@@ -184,24 +184,6 @@ export default class ASTUtil {
 
     return node;
   }
-
-  // /**
-  //  * flatten name of MemberExpression.
-  //  * @param {ASTNode} memberExpression - MemberExpression Node.
-  //  * @returns {string} flatten node name.
-  //  */
-  // static flattenMemberExpression(memberExpression) {
-  //   const names = [];
-  //   let object = memberExpression;
-  //   while (object) {
-  //     if (object.name) {
-  //       names.push(object.name);
-  //       break;
-  //     } else {
-  //       names.push(object.property.name);
-  //       object = object.object;
-  //     }
-  //   }
-  //   return names.reverse().join('.');
-  // }
 }
+
+module.exports = ASTUtil;

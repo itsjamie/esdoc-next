@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0 (2019-12-29)
+
+Released under new monorepo structure.
+
+# Old Changelog
+
 ## 1.0.2 (2018-04-29)
 - **Fix**
   - Strip last slash ([#37](https://github.com/esdoc/esdoc-plugins/pull/37)) Thanks [@LestaD](https://github.com/LestaD)

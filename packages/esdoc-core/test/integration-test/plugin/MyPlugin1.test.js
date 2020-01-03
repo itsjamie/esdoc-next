@@ -1,6 +1,6 @@
-import assert from 'assert';
-import fs from 'fs';
-import {find} from '../util';
+const assert = require('assert');
+const fs = require('fs');
+const {find} = require('../util');
 
 describe('test/plugin/MyPlugin1:', ()=>{
   it('calls handlers', ()=>{

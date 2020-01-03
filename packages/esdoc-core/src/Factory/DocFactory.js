@@ -1,21 +1,17 @@
-import logger from 'color-logger';
-import CommentParser from '../Parser/CommentParser.js';
-import FileDoc from '../Doc/FileDoc.js';
-import ClassDoc from '../Doc/ClassDoc.js';
-import MethodDoc from '../Doc/MethodDoc.js';
-import ClassProperty from '../Doc/ClassPropertyDoc';
-import MemberDoc from '../Doc/MemberDoc.js';
-import FunctionDoc from '../Doc/FunctionDoc.js';
-import VariableDoc from '../Doc/VariableDoc.js';
-import AssignmentDoc from '../Doc/AssignmentDoc.js';
-import TypedefDoc from '../Doc/TypedefDoc.js';
-import ExternalDoc from '../Doc/ExternalDoc.js';
-import ASTUtil from '../Util/ASTUtil.js';
-
-const already = Symbol('already');
-const external = Symbol('external');
-const astKey = Symbol('ast');
-export const name = Symbol('name');
+const logger = require('color-logger').default;
+const CommentParser = require('../Parser/CommentParser.js');
+const FileDoc = require('../Doc/FileDoc.js');
+const ClassDoc = require('../Doc/ClassDoc.js');
+const MethodDoc = require('../Doc/MethodDoc.js');
+const ClassProperty = require('../Doc/ClassPropertyDoc');
+const MemberDoc = require('../Doc/MemberDoc.js');
+const FunctionDoc = require('../Doc/FunctionDoc.js');
+const VariableDoc = require('../Doc/VariableDoc.js');
+const AssignmentDoc = require('../Doc/AssignmentDoc.js');
+const TypedefDoc = require('../Doc/TypedefDoc.js');
+const ExternalDoc = require('../Doc/ExternalDoc.js');
+const {already, external, astKey, name} = require('./Symbols.js');
+const ASTUtil = require('../Util/ASTUtil.js');
 
 /**
  * Doc factory class.
@@ -25,7 +21,7 @@ export const name = Symbol('name');
  * factory.push(node, parentNode);
  * let results = factory.results;
  */
-export default class DocFactory {
+class DocFactory {
   /**
    * @type {DocObject[]}
    */
@@ -798,3 +794,6 @@ export default class DocFactory {
     return null;
   }
 }
+
+exports.DocFactory = DocFactory;
+exports.name = name;

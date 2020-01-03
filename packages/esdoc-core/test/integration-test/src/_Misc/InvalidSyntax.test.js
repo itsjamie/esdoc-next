@@ -1,5 +1,5 @@
-import assert from 'assert';
-import InvalidCodeLogger from '../../../../src/Util/InvalidCodeLogger';
+const assert = require('assert');
+const InvalidCodeLogger = require('../../../../src/Util/InvalidCodeLogger');
 
 describe('test/_Misc/InvalidSyntax:', ()=>{
   it('is invalid', ()=>{

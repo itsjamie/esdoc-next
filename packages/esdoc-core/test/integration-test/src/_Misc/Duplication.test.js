@@ -1,4 +1,4 @@
-import assert from 'assert';
+const assert = require('assert');
 
 describe('test/_Misc/Duplication:', ()=>{
   it('does not duplication', ()=>{

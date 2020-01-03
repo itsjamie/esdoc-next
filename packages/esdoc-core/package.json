@@ -1,22 +1,21 @@
 {
-  "name": "esdoc",
-  "version": "1.1.0",
+  "name": "@itsjamie/esdoc-core",
+  "version": "0.1.0",
   "description": "Good Documentation Generator For JavaScript",
   "author": {
     "name": "h13i32maru",
     "url": "https://h13i32maru.jp"
   },
-  "homepage": "https://esdoc.org/",
+  "homepage": "https://github.com/itsjamie/esdoc-next",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/esdoc/esdoc"
+    "url": "https://github.com/itsjamie/esdoc-next"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 10.0.0"
   },
   "scripts": {
-    "build": "node ./script/build.js",
     "test": "node ./script/test.js",
     "test-ci": "node ./script/test-ci.js",
     "esdoc": "node ./script/esdoc.js",
@@ -25,7 +24,6 @@
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/generator": "^7.7.2",
-    "@babel/node": "^7.7.0",
     "@babel/parser": "^7.7.3",
     "@babel/traverse": "^7.7.2",
     "cheerio": "1.0.0-rc.3",
@@ -38,17 +36,8 @@
     "taffydb": "2.7.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/register": "^7.7.0",
-    "babel-plugin-istanbul": "5.2.0",
+    "@itsjamie/esdoc-cli": "^0.1.0",
     "codecov": "3.6.1",
-    "esdoc-accessor-plugin": "latest",
-    "esdoc-external-ecmascript-plugin": "latest",
-    "esdoc-importpath-plugin": "^1.0.1",
-    "esdoc-standard-plugin": "latest",
-    "esdoc-undocumented-identifier-plugin": "latest",
     "eslint": "6.6.0",
     "mocha": "6.2.2",
     "nyc": "14.1.1"
@@ -73,11 +62,11 @@
     "proposal"
   ],
   "files": [
-    "out/src",
+    "src",
     "README.md"
   ],
-  "main": "out/src/ESDoc.js",
-  "bin": {
-    "esdoc": "out/src/ESDocCLI.js"
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
   }
 }

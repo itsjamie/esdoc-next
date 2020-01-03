@@ -1,9 +1,9 @@
-import assert from 'assert';
+const assert = require('assert');
 
 /**
  * Param Type Parser class.
  */
-export default class ParamParser {
+class ParamParser {
   /**
    * parse param value.
    * @param {string} value - param value.
@@ -169,3 +169,5 @@ export default class ParamParser {
     return result;
   }
 }
+
+module.exports = ParamParser;

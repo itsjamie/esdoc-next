@@ -1,9 +1,9 @@
-import AbstractDoc from './AbstractDoc.js';
+const AbstractDoc = require('./AbstractDoc.js');
 
 /**
  * Doc Class for Assignment AST node.
  */
-export default class AssignmentDoc extends AbstractDoc {
+class AssignmentDoc extends AbstractDoc {
   /**
    * specify ``variable`` to kind.
    */
@@ -32,3 +32,4 @@ export default class AssignmentDoc extends AbstractDoc {
   }
 }
 
+module.exports = AssignmentDoc;

@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-require('@babel/register');
-const ESParser = require('../src/Parser/ESParser.js').default;
-const Plugin = require('../src/Plugin/Plugin.js').default;
 
+const ESParser = require('../src/Parser/ESParser.js');
+const Plugin = require('../src/Plugin/Plugin.js');
+console.log(Plugin);
 Plugin.init([]);
 
 if (!process.argv[2]) {

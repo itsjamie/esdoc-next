@@ -1,10 +1,10 @@
-import IceCap from 'ice-cap';
-import DocBuilder from './DocBuilder.js';
+const IceCap = require('ice-cap').default;
+const DocBuilder = require('./DocBuilder.js');
 
 /**
  * File output builder class.
  */
-export default class FileDocBuilder extends DocBuilder {
+class FileDocBuilder extends DocBuilder {
   exec(writeFile, copyDir) {
     const ice = this._buildLayoutDoc();
 
@@ -34,3 +34,5 @@ export default class FileDocBuilder extends DocBuilder {
     return ice.html;
   }
 }
+
+module.exports = FileDocBuilder;

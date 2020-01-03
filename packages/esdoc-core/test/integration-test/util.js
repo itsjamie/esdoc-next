@@ -1,6 +1,6 @@
-import fs from 'fs';
+const fs = require('fs');
 
-export function find(key, ...values) {
+function find(key, ...values) {
   if (values.length === 1) {
     // eslint-disable-next-line array-callback-return, consistent-return
     return global.docs.find((doc) => {
@@ -23,7 +23,9 @@ export function find(key, ...values) {
   return results;
 }
 
-export function file(filePath) {
+function file(filePath) {
   return fs.readFileSync(filePath).toString();
 }
 
+exports.find = find;
+exports.file = file;
