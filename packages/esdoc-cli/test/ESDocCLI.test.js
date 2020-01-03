@@ -1,4 +1,4 @@
-const ESDocCLI = require('@itsjamie/esdoc-cli');
+const ESDocCLI = require('../cli.js');
 const process = require('process');
 const fs = require('fs');
 const assert = require('assert');

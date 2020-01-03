@@ -23,7 +23,8 @@
     "esdoc": "./cli.js"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.1.0"
+    "@itsjamie/esdoc-core": "^0.1.0",
+    "mocha": "^6.2.2"
   },
   "publishConfig": {
     "access": "public"
