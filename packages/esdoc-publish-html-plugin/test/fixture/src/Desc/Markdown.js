@@ -18,7 +18,7 @@
  * [inner link](#inner-link)
  *
  * ```js
- * let foo = 'this is code block'
+ * let foo = "this is code block"
  * ```
  *
  * | Left align | Right align | Center align |

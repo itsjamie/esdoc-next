@@ -27,7 +27,7 @@ function findParent($el, selector, parentSelector, callback) {
   });
 }
 
-function getActual($el, selector, attr) {
+function getActual($el, selector, attr, html = false) {
   let $target;
   if (selector) {
     const $els = $el.find(selector);
@@ -45,6 +45,8 @@ function getActual($el, selector, attr) {
   let actual;
   if (attr) {
     actual = $target.attr(attr);
+  } else if (html) {
+    actual = $target.html().replace(/\s+/g, ' ');
   } else {
     actual = $target.text().replace(/\s+/g, ' ');
   }
@@ -60,6 +62,11 @@ _assert.includes = function($el, selector, expect, attr) {
   const actual = getActual($el, selector, attr);
   _assert(actual.includes(expect) === true, `selector: "${selector}",\nactual: ${actual}\nexpect: ${expect}`);
 };
+
+_assert.includesHTML = function($el, selector, expect, attr) {
+  const actual = getActual($el, selector, attr, true);
+  _assert(actual.includes(expect) === true, `selector: "${selector}",\nactual: ${actual}\nexpect: ${expect}`);
+}
 
 _assert.multiIncludes = function($el, selector, expects, attr) {
   const $targets = $el.find(selector);

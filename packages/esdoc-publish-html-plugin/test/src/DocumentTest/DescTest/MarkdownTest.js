@@ -11,7 +11,7 @@ describe('TestDescMarkdown:', ()=> {
         assert.includes(doc.find('p:nth-child(1)'), null, 'this is TestDescMarkdown.');
 
         // code fence of html
-        assert.includes(doc.find('pre:nth-child(2) code.lang-html code.source-code.prettyprint'), null,
+        assert.includesHTML(doc.find('pre:nth-child(2) code.lang-html code.source-code.prettyprint'), null,
           `<div>text</div> <ul> <li>item1</li> <li>item2</li> <li>item3</li> </ul>`
         );
 
@@ -27,8 +27,8 @@ describe('TestDescMarkdown:', ()=> {
         assert.includes(doc.find('p:nth-child(5) a[href$="#inner-link"]'), null, 'inner link');
 
         // code fence of js
-        assert.includes(doc.find('pre:nth-child(6) code.lang-js code.source-code.prettyprint'), null,
-          `let foo = 'this is code block'`
+        assert.includes(doc.find('pre:nth-child(6) code.lang-js'), null,
+          `let foo = "this is code block"`
         );
 
         // table

@@ -1,5 +1,9 @@
 const marked = require('marked');
-const escape = require('escape-html');
+const createDOMPurify = require('dompurify');
+const jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+const dom = new JSDOM('');
+const DOMPurify = createDOMPurify(dom.window);
 
 /**
  * shorten description.
@@ -54,7 +58,7 @@ function shorten(doc, asMarkdown = false) {
 }
 
 /**
- * convert markdown text to html.
+ * convert markdown text to sanitized html.
  * @param {string} text - markdown text.
  * @param {boolean} [breaks=false] if true, break line. FYI gfm is not breaks.
  * @return {string} html.
@@ -75,32 +79,13 @@ function markdown(text, breaks = false) {
     gfm: true,
     tables: true,
     breaks: breaks,
-    sanitize: true,
-    sanitizer: (tag) =>{
-      if (tag.match(/<!--.*-->/)) {
-        return tag;
-      }
-      const tagName = tag.match(/^<\/?(\w+)/)[1];
-      if (!availableTags.includes(tagName)) {
-        return escape(tag);
-      }
-
-      const sanitizedTag = tag.replace(/([\w\-]+)=(["'].*?["'])/g, (_, attr, val)=>{
-        if (!availableAttributes.includes(attr)) return '';
-        /* eslint-disable no-script-url */
-        if (val.indexOf('javascript:') !== -1) return '';
-        return `${attr}=${val}`;
-      });
-
-      return sanitizedTag;
-    },
+    langPrefix: "lang-",
     highlight: function(code) {
-      // return `<pre class="source-code"><code class="prettyprint">${escape(code)}</code></pre>`;
-      return `<code class="source-code prettyprint">${escape(code)}</code>`;
+      return DOMPurify.sanitize(`<code class="source-code prettyprint">${code}</code>`)
     }
   });
 
-  return compiled;
+  return DOMPurify.sanitize(compiled)
 }
 
 /**
