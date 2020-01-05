@@ -22,8 +22,10 @@
   "bin": {
     "esdoc": "./cli.js"
   },
+  "dependencies": {
+    "@itsjamie/esdoc-core": "^0.1.1-alpha.0"
+  },
   "devDependencies": {
-    "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
     "mocha": "^6.2.2"
   },
   "publishConfig": {

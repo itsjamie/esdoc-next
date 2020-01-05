@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
-    "mocha": "2.5.3"
+    "mocha": "^6.2.2"
   },
   "engines": {
     "node": ">= 6.0.0"
