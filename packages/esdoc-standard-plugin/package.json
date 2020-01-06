@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-standard-plugin",
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1-alpha.3",
   "description": "A standard plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -10,17 +10,17 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "@itsjamie/esdoc-accessor-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-brand-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-coverage-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-integrate-manual-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-integrate-test-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-lint-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-publish-html-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.1.1-alpha.1",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.1.1-alpha.1"
+    "@itsjamie/esdoc-accessor-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-brand-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-coverage-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-integrate-manual-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-integrate-test-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-lint-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-publish-html-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.1.1-alpha.3"
   },
   "devDependencies": {
     "@itsjamie/esdoc-core": "^0.1.1-alpha.0",

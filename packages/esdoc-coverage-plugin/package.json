@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-coverage-plugin",
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1-alpha.3",
   "description": "A coverage plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.1.1-alpha.1",
+    "@itsjamie/esdoc-cli": "^0.1.1-alpha.3",
     "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
     "mocha": "^6.2.2"
   },
