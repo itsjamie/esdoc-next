@@ -32,8 +32,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": "~0.x"
+  },
   "dependencies": {
-    "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
     "color-logger": "0.0.6"
   }
 }

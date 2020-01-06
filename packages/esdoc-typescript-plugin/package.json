@@ -9,8 +9,10 @@
     "type": "git",
     "url": "https://github.com/itsjamie/esdoc-next"
   },
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": "~0.x"
+  },
   "dependencies": {
-    "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
     "typescript": "^3.7.4"
   },
   "devDependencies": {

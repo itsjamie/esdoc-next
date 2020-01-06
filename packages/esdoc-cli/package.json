@@ -22,8 +22,8 @@
   "bin": {
     "esdoc": "./cli.js"
   },
-  "dependencies": {
-    "@itsjamie/esdoc-core": "^0.1.1-alpha.0"
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": "~0.x"
   },
   "devDependencies": {
     "mocha": "^6.2.2"
