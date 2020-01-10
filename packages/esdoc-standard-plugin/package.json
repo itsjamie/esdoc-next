@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-standard-plugin",
-  "version": "0.1.1-alpha.3",
+  "version": "0.1.1-alpha.4",
   "description": "A standard plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -17,8 +17,8 @@
     "@itsjamie/esdoc-integrate-manual-plugin": "^0.1.1-alpha.3",
     "@itsjamie/esdoc-integrate-test-plugin": "^0.1.1-alpha.3",
     "@itsjamie/esdoc-lint-plugin": "^0.1.1-alpha.3",
-    "@itsjamie/esdoc-publish-html-plugin": "^0.1.1-alpha.3",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.1.1-alpha.3",
+    "@itsjamie/esdoc-publish-html-plugin": "^0.1.1-alpha.4",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.1.1-alpha.4",
     "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.1.1-alpha.3",
     "@itsjamie/esdoc-unexported-identifier-plugin": "^0.1.1-alpha.3"
   },
