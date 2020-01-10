@@ -331,8 +331,8 @@ class Plugin {
             typeMap[name] = 'function';
             break;
           }
-          case 'SpreadProperty': {
-            const name = `...${prop.argument.name}`;
+          case 'SpreadElement': {
+            const name = `...${prop.argument.callee.name}`;
             typeMap[name] = 'Object';
             break;
           }
