@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": "~0.x"
+    "@itsjamie/esdoc-core": ">= 0.2"
   },
   "dependencies": {
     "typescript": "^3.7.4"

@@ -33,7 +33,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": "~0.x"
+    "@itsjamie/esdoc-core": ">= 0.2"
   },
   "dependencies": {
     "color-logger": "0.0.6"
