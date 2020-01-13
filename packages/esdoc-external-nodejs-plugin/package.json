@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-external-nodejs-plugin",
-  "version": "0.1.1-alpha.3",
+  "version": "0.2.0",
   "description": "A external Node.js plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -13,8 +13,8 @@
     "fs-extra": "1.0.0"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.1.1-alpha.3",
-    "@itsjamie/esdoc-core": "^0.1.1-alpha.0",
+    "@itsjamie/esdoc-cli": "^0.2.0",
+    "@itsjamie/esdoc-core": "^0.2.0",
     "mocha": "^6.2.2"
   },
   "engines": {

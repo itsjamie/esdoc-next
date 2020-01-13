@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-typescript-plugin",
-  "version": "0.1.1-alpha.4",
+  "version": "0.2.0",
   "description": "A TypeScript plugin for ESDoc [PoC]",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -16,8 +16,8 @@
     "typescript": "^3.7.4"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.1.1-alpha.3",
-    "@itsjamie/esdoc-standard-plugin": "^0.1.1-alpha.4",
+    "@itsjamie/esdoc-cli": "^0.2.0",
+    "@itsjamie/esdoc-standard-plugin": "^0.2.0",
     "mocha": "^6.2.2"
   },
   "engines": {
