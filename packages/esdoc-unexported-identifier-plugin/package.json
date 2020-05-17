@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-unexported-identifier-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A unexported identifier plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -10,8 +10,8 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.2.0",
-    "@itsjamie/esdoc-core": "^0.2.0",
+    "@itsjamie/esdoc-cli": "^0.3.0",
+    "@itsjamie/esdoc-core": "^0.3.0",
     "mocha": "^6.2.2"
   },
   "engines": {

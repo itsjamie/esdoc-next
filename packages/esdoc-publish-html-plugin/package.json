@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-publish-html-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A publish HTML plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -21,18 +21,18 @@
     "taffydb": "2.7.2"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-accessor-plugin": "^0.2.0",
-    "@itsjamie/esdoc-brand-plugin": "^0.2.0",
-    "@itsjamie/esdoc-cli": "^0.2.0",
-    "@itsjamie/esdoc-core": "^0.2.0",
-    "@itsjamie/esdoc-coverage-plugin": "^0.2.0",
-    "@itsjamie/esdoc-ecmascript-proposal-plugin": "^0.2.0",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.2.0",
-    "@itsjamie/esdoc-integrate-manual-plugin": "^0.2.0",
-    "@itsjamie/esdoc-integrate-test-plugin": "^0.2.0",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.2.0",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.2.0",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.2.0",
+    "@itsjamie/esdoc-accessor-plugin": "^0.3.0",
+    "@itsjamie/esdoc-brand-plugin": "^0.3.0",
+    "@itsjamie/esdoc-cli": "^0.3.0",
+    "@itsjamie/esdoc-core": "^0.3.0",
+    "@itsjamie/esdoc-coverage-plugin": "^0.3.0",
+    "@itsjamie/esdoc-ecmascript-proposal-plugin": "^0.3.0",
+    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.3.0",
+    "@itsjamie/esdoc-integrate-manual-plugin": "^0.3.0",
+    "@itsjamie/esdoc-integrate-test-plugin": "^0.3.0",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.3.0",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.3.0",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.3.0",
     "mocha": "^6.2.2"
   },
   "engines": {
