@@ -332,7 +332,12 @@ class Plugin {
             break;
           }
           case 'SpreadElement': {
-            const name = `...${prop.argument.callee.name}`;
+            let name;
+            if (typeof prop.argument.callee !== "undefined") {
+              name = `...${prop.argument.callee.name}`;
+            } else {
+              name = `...${prop.argument.name}`;
+            }
             typeMap[name] = 'Object';
             break;
           }
