@@ -25,9 +25,6 @@
   "peerDependencies": {
     "@itsjamie/esdoc-core": ">= 0.2"
   },
-  "devDependencies": {
-    "mocha": "^6.2.2"
-  },
   "publishConfig": {
     "access": "public"
   }

@@ -15,11 +15,6 @@
   "dependencies": {
     "typescript": "^3.7.4"
   },
-  "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.3.0",
-    "@itsjamie/esdoc-standard-plugin": "^0.3.0",
-    "mocha": "^6.2.2"
-  },
   "engines": {
     "node": ">= 10.0.0"
   },

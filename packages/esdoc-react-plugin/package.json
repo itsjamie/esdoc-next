@@ -10,14 +10,11 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "@itsjamie/esdoc-publish-html-plugin": "^0.3.0",
+    "@itsjamie/esdoc-publish-html-plugin": "file:../esdoc-publish-html-plugin",
     "cheerio": "1.0.0-rc.1"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.3.0",
-    "@itsjamie/esdoc-core": "^0.3.0",
-    "@itsjamie/esdoc-standard-plugin": "^0.3.0",
-    "mocha": "^6.2.2"
+    "@itsjamie/esdoc-standard-plugin": "file:../esdoc-standard-plugin"
   },
   "engines": {
     "node": ">= 10.0.0"
