@@ -12,6 +12,7 @@
   "dependencies": {
     "babel-generator": "6.11.4",
     "cheerio": "0.22.0",
+    "codecov": "^3.8.0",
     "dompurify": "^2.0.7",
     "escape-html": "1.0.3",
     "eslint": "^7.12.1",

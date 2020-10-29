@@ -10,6 +10,7 @@
     "url": "https://github.com/esdoc/esdoc-plugins"
   },
   "dependencies": {
+    "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "ice-cap": "0.0.4",
     "mocha": "^8.2.0",

@@ -12,6 +12,7 @@
   "dependencies": {
     "@itsjamie/esdoc-publish-html-plugin": "file:../esdoc-publish-html-plugin",
     "cheerio": "1.0.0-rc.1",
+    "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
     "nyc": "^15.1.0"

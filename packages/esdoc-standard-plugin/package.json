@@ -21,6 +21,7 @@
     "@itsjamie/esdoc-type-inference-plugin": "file:../esdoc-type-inference-plugin",
     "@itsjamie/esdoc-undocumented-identifier-plugin": "file:../esdoc-undocumented-identifier-plugin",
     "@itsjamie/esdoc-unexported-identifier-plugin": "file:../esdoc-unexported-identifier-plugin",
+    "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
     "nyc": "^15.1.0"
