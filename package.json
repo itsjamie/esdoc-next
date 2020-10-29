@@ -5,15 +5,8 @@
     "test": "npx lerna run test"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-accessor-plugin": "file:../esdoc-accessor-plugin",
-    "@itsjamie/esdoc-brand-plugin": "file:../esdoc-brand-plugin",
     "@itsjamie/esdoc-cli": "file:../esdoc-cli",
     "@itsjamie/esdoc-core": "file:../esdoc-core",
-    "@itsjamie/esdoc-coverage-plugin": "file:../esdoc-coverage-plugin",
-    "@itsjamie/esdoc-ecmascript-proposal-plugin": "file:../esdoc-ecmascript-proposal-plugin",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "file:../esdoc-external-ecmascript-plugin",
-    "@itsjamie/esdoc-integrate-manual-plugin": "file:../esdoc-integrate-manual-plugin",
-    "@itsjamie/esdoc-integrate-test-plugin": "file:../esdoc-integrate-test-plugin",
     "@itsjamie/esdoc-standard-plugin": "file:../esdoc-standard-plugin",
     "@itsjamie/esdoc-type-inference-plugin": "file:../esdoc-type-inference-plugin",
     "@itsjamie/esdoc-undocumented-identifier-plugin": "file:../esdoc-undocumented-identifier-plugin",
