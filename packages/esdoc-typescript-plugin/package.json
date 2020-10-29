@@ -13,6 +13,9 @@
     "@itsjamie/esdoc-core": ">= 0.2"
   },
   "dependencies": {
+    "eslint": "^7.12.1",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0",
     "typescript": "^3.7.4"
   },
   "engines": {

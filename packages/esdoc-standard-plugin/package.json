@@ -20,7 +20,10 @@
     "@itsjamie/esdoc-publish-html-plugin": "file:../esdoc-publish-html-plugin",
     "@itsjamie/esdoc-type-inference-plugin": "file:../esdoc-type-inference-plugin",
     "@itsjamie/esdoc-undocumented-identifier-plugin": "file:../esdoc-undocumented-identifier-plugin",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "file:../esdoc-unexported-identifier-plugin"
+    "@itsjamie/esdoc-unexported-identifier-plugin": "file:../esdoc-unexported-identifier-plugin",
+    "eslint": "^7.12.1",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0"
   },
   "engines": {
     "node": ">= 6.0.0"

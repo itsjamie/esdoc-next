@@ -28,5 +28,10 @@
   "main": "src/Plugin.js",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "eslint": "^7.12.1",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0"
   }
 }

@@ -29,10 +29,13 @@
     "cheerio": "1.0.0-rc.3",
     "color-logger": "0.0.6",
     "escape-html": "1.0.3",
+    "eslint": "^7.12.1",
     "fs-extra": "8.1.0",
     "ice-cap": "0.0.4",
     "marked": "0.7.0",
     "minimist": "1.2.3",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0",
     "taffydb": "2.7.3"
   },
   "keywords": [
