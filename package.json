@@ -1,43 +1,12 @@
 {
   "name": "root",
   "private": true,
-  "scripts": {
-    "test": "npx lerna run test"
-  },
+  "workspaces": ["packages/*"],
   "devDependencies": {
     "codecov": "3.7.1",
     "eslint": "6.6.0",
-    "lerna": "^3.22.1",
-    "mocha": "^6.2.2",
-    "nyc": "14.1.1"
-  },
-  "dependencies": {
-    "@itsjamie/esdoc-accessor-plugin": "file:packages/esdoc-accessor-plugin",
-    "@itsjamie/esdoc-brand-plugin": "file:packages/esdoc-brand-plugin",
-    "@itsjamie/esdoc-cli": "file:packages/esdoc-cli",
-    "@itsjamie/esdoc-core": "file:packages/esdoc-core",
-    "@itsjamie/esdoc-coverage-plugin": "file:packages/esdoc-coverage-plugin",
-    "@itsjamie/esdoc-ecmascript-proposal-plugin": "file:packages/esdoc-ecmascript-proposal-plugin",
-    "@itsjamie/esdoc-exclude-source-plugin": "file:packages/esdoc-exclude-source-plugin",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "file:packages/esdoc-external-ecmascript-plugin",
-    "@itsjamie/esdoc-external-nodejs-plugin": "file:packages/esdoc-external-nodejs-plugin",
-    "@itsjamie/esdoc-external-webapi-plugin": "file:packages/esdoc-external-webapi-plugin",
-    "@itsjamie/esdoc-flow-type-plugin": "file:packages/esdoc-flow-type-plugin",
-    "@itsjamie/esdoc-importpath-plugin": "file:packages/esdoc-importpath-plugin",
-    "@itsjamie/esdoc-inject-gtm-plugin": "file:packages/esdoc-inject-gtm-plugin",
-    "@itsjamie/esdoc-inject-script-plugin": "file:packages/esdoc-inject-script-plugin",
-    "@itsjamie/esdoc-inject-style-plugin": "file:packages/esdoc-inject-style-plugin",
-    "@itsjamie/esdoc-integrate-manual-plugin": "file:packages/esdoc-integrate-manual-plugin",
-    "@itsjamie/esdoc-integrate-test-plugin": "file:packages/esdoc-integrate-test-plugin",
-    "@itsjamie/esdoc-jsx-plugin": "file:packages/esdoc-jsx-plugin",
-    "@itsjamie/esdoc-lint-plugin": "file:packages/esdoc-lint-plugin",
-    "@itsjamie/esdoc-publish-html-plugin": "file:packages/esdoc-publish-html-plugin",
-    "@itsjamie/esdoc-publish-markdown-plugin": "file:packages/esdoc-publish-markdown-plugin",
-    "@itsjamie/esdoc-react-plugin": "file:packages/esdoc-react-plugin",
-    "@itsjamie/esdoc-standard-plugin": "file:packages/esdoc-standard-plugin",
-    "@itsjamie/esdoc-type-inference-plugin": "file:packages/esdoc-type-inference-plugin",
-    "@itsjamie/esdoc-typescript-plugin": "file:packages/esdoc-typescript-plugin",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "file:packages/esdoc-undocumented-identifier-plugin",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "file:packages/esdoc-unexported-identifier-plugin"
+    "mocha": "^8.2.0",
+    "nyc": "14.1.1",
+    "yarn": "^1.22.10"
   }
 }
