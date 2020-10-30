@@ -209,33 +209,6 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@itsjamie/esdoc-publish-html-plugin@file:packages/esdoc-publish-html-plugin":
-  version "0.3.0"
-  dependencies:
-    cheerio "0.22.0"
-    dompurify "^2.0.7"
-    escape-html "1.0.3"
-    fs-extra "1.0.0"
-    ice-cap "0.0.4"
-    jsdom "^15.2.1"
-    marked "^0.8.0"
-    taffydb "2.7.2"
-
-"@itsjamie/esdoc-standard-plugin@file:packages/esdoc-standard-plugin":
-  version "0.3.0"
-  dependencies:
-    "@itsjamie/esdoc-accessor-plugin" "^0.3.0"
-    "@itsjamie/esdoc-brand-plugin" "^0.3.0"
-    "@itsjamie/esdoc-coverage-plugin" "^0.3.0"
-    "@itsjamie/esdoc-external-ecmascript-plugin" "^0.3.0"
-    "@itsjamie/esdoc-integrate-manual-plugin" "^0.3.0"
-    "@itsjamie/esdoc-integrate-test-plugin" "^0.3.0"
-    "@itsjamie/esdoc-lint-plugin" "^0.3.0"
-    "@itsjamie/esdoc-publish-html-plugin" "^0.3.0"
-    "@itsjamie/esdoc-type-inference-plugin" "^0.3.0"
-    "@itsjamie/esdoc-undocumented-identifier-plugin" "^0.3.0"
-    "@itsjamie/esdoc-unexported-identifier-plugin" "^0.3.0"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
