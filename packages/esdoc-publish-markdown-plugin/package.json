@@ -10,12 +10,15 @@
     "url": "https://github.com/esdoc/esdoc-plugins"
   },
   "dependencies": {
+    "ice-cap": "0.0.4",
+    "to-markdown": "3.0.4"
+  },
+  "devDependencies": {
+    "@itsjamie/esdoc-cli": "^0.3.0",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
-    "ice-cap": "0.0.4",
     "mocha": "^8.2.0",
-    "nyc": "^15.1.0",
-    "to-markdown": "3.0.4"
+    "nyc": "^15.1.0"
   },
   "engines": {
     "node": ">= 10.0.0"

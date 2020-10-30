@@ -10,15 +10,17 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "cheerio": "0.22.0",
+    "cheerio": "0.22.0"
+  },
+  "devDependencies": {
+    "@itsjamie/esdoc-cli": ">= 0.3.0",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
     "nyc": "^15.1.0"
   },
-  "devDependencies": {
-    "@itsjamie/esdoc-cli": "file:../esdoc-cli",
-    "@itsjamie/esdoc-core": "file:../esdoc-core"
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": ">= 0.3"
   },
   "engines": {
     "node": ">= 10.0.0"

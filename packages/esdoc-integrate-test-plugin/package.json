@@ -28,7 +28,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": ">= 0.3.0"
+  },
+  "devDependencies": {
+    "@itsjamie/esdoc-cli": ">= 0.3.0",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",

@@ -209,152 +209,32 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@itsjamie/esdoc-accessor-plugin@file:packages/esdoc-accessor-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-brand-plugin@file:packages/esdoc-brand-plugin":
-  version "0.3.0"
-  dependencies:
-    cheerio "0.22.0"
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-cli@file:packages/esdoc-cli":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-core@file:packages/esdoc-core":
-  version "0.3.0"
-  dependencies:
-    "@babel/core" "^7.7.2"
-    "@babel/generator" "^7.7.2"
-    "@babel/parser" "^7.7.3"
-    "@babel/traverse" "^7.7.2"
-    cheerio "1.0.0-rc.3"
-    codecov "^3.8.0"
-    color-logger "0.0.6"
-    escape-html "1.0.3"
-    eslint "^7.12.1"
-    fs-extra "8.1.0"
-    ice-cap "0.0.4"
-    marked "0.7.0"
-    minimist "^1.2.5"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-    taffydb "2.7.3"
-
-"@itsjamie/esdoc-coverage-plugin@file:packages/esdoc-coverage-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-external-ecmascript-plugin@file:packages/esdoc-external-ecmascript-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    fs-extra "1.0.0"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-integrate-manual-plugin@file:packages/esdoc-integrate-manual-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-integrate-test-plugin@file:packages/esdoc-integrate-test-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-lint-plugin@file:packages/esdoc-lint-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
 "@itsjamie/esdoc-publish-html-plugin@file:packages/esdoc-publish-html-plugin":
   version "0.3.0"
   dependencies:
-    babel-generator "6.11.4"
     cheerio "0.22.0"
-    codecov "^3.8.0"
     dompurify "^2.0.7"
     escape-html "1.0.3"
-    eslint "^7.12.1"
     fs-extra "1.0.0"
     ice-cap "0.0.4"
     jsdom "^15.2.1"
     marked "^0.8.0"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
     taffydb "2.7.2"
 
 "@itsjamie/esdoc-standard-plugin@file:packages/esdoc-standard-plugin":
   version "0.3.0"
   dependencies:
-    "@itsjamie/esdoc-accessor-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-accessor-plugin"
-    "@itsjamie/esdoc-brand-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-brand-plugin"
-    "@itsjamie/esdoc-coverage-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-coverage-plugin"
-    "@itsjamie/esdoc-external-ecmascript-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-external-ecmascript-plugin"
-    "@itsjamie/esdoc-integrate-manual-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-integrate-manual-plugin"
-    "@itsjamie/esdoc-integrate-test-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-integrate-test-plugin"
-    "@itsjamie/esdoc-lint-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-lint-plugin"
-    "@itsjamie/esdoc-publish-html-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-publish-html-plugin"
-    "@itsjamie/esdoc-type-inference-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-type-inference-plugin"
-    "@itsjamie/esdoc-undocumented-identifier-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-undocumented-identifier-plugin"
-    "@itsjamie/esdoc-unexported-identifier-plugin" "file:../../../../Library/Caches/Yarn/v6/npm-@itsjamie-esdoc-standard-plugin-0.3.0-5b58b58b-d02c-4388-9ec0-08d0792fb0a9-1604087337458/node_modules/@itsjamie/esdoc-unexported-identifier-plugin"
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-type-inference-plugin@file:packages/esdoc-type-inference-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    color-logger "0.0.6"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-undocumented-identifier-plugin@file:packages/esdoc-undocumented-identifier-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
-
-"@itsjamie/esdoc-unexported-identifier-plugin@file:packages/esdoc-unexported-identifier-plugin":
-  version "0.3.0"
-  dependencies:
-    codecov "^3.8.0"
-    eslint "^7.12.1"
-    mocha "^8.2.0"
-    nyc "^15.1.0"
+    "@itsjamie/esdoc-accessor-plugin" "^0.3.0"
+    "@itsjamie/esdoc-brand-plugin" "^0.3.0"
+    "@itsjamie/esdoc-coverage-plugin" "^0.3.0"
+    "@itsjamie/esdoc-external-ecmascript-plugin" "^0.3.0"
+    "@itsjamie/esdoc-integrate-manual-plugin" "^0.3.0"
+    "@itsjamie/esdoc-integrate-test-plugin" "^0.3.0"
+    "@itsjamie/esdoc-lint-plugin" "^0.3.0"
+    "@itsjamie/esdoc-publish-html-plugin" "^0.3.0"
+    "@itsjamie/esdoc-type-inference-plugin" "^0.3.0"
+    "@itsjamie/esdoc-undocumented-identifier-plugin" "^0.3.0"
+    "@itsjamie/esdoc-unexported-identifier-plugin" "^0.3.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -579,43 +459,6 @@ aws4@^1.8.0:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
   integrity sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
-
-babel-generator@6.11.4:
-  version "6.11.4"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.11.4.tgz#14f6933abb20c62666d27e3b7b9f5b9dc0712a9a"
-  integrity sha1-FPaTOrsgxiZm0n47e59bncBxKpo=
-  dependencies:
-    babel-messages "^6.8.0"
-    babel-runtime "^6.9.0"
-    babel-types "^6.10.2"
-    detect-indent "^3.0.1"
-    lodash "^4.2.0"
-    source-map "^0.5.0"
-
-babel-messages@^6.8.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
-  integrity sha1-8830cDhYA1sqKVHG7F7fbGLyYw4=
-  dependencies:
-    babel-runtime "^6.22.0"
-
-babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.9.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
-  integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
-  dependencies:
-    core-js "^2.4.0"
-    regenerator-runtime "^0.11.0"
-
-babel-types@^6.10.2:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
-  integrity sha1-o7Bz+Uq0nrb6Vc1lInozQ4BjJJc=
-  dependencies:
-    babel-runtime "^6.26.0"
-    esutils "^2.0.2"
-    lodash "^4.17.4"
-    to-fast-properties "^1.0.3"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -933,11 +776,6 @@ convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-core-js@^2.4.0:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
-  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
-
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -1077,15 +915,6 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
-
-detect-indent@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-3.0.1.tgz#9dc5e5ddbceef8325764b9451b02bc6d54084f75"
-  integrity sha1-ncXl3bzu+DJXZLlFGwK8bVQIT3U=
-  dependencies:
-    get-stdin "^4.0.1"
-    minimist "^1.1.0"
-    repeating "^1.1.0"
 
 diff@4.0.2:
   version "4.0.2"
@@ -1633,11 +1462,6 @@ get-package-type@^0.1.0:
   resolved "https://registry.yarnpkg.com/get-package-type/-/get-package-type-0.1.0.tgz#8de2d803cff44df3bc6c456e6668b36c3926e11a"
   integrity sha512-pjzuKtY64GYfWizNAJ0fr9VqttZkNiK2iS430LtIHzjBEr6bX8Am2zm4sW4Ro5wjWW5cAlRL1qAMTcXbjNAO2Q==
 
-get-stdin@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
-  integrity sha1-uWjGsKBDhDJJAui/Gl3zJXmkUP4=
-
 getpass@^0.1.1:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
@@ -1915,11 +1739,6 @@ is-extglob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
   integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
-
-is-finite@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-finite/-/is-finite-1.1.0.tgz#904135c77fb42c0641d6aa1bcdbc4daa8da082f3"
-  integrity sha512-cdyMtqX/BOqqNBBiKlIVkytNHm49MtMlYyn1zxzvJKWmFMlGzm+ry5BBfYyeY9YmNKbRSo/o7OX9w9ale0wg3w==
 
 is-fullwidth-code-point@^2.0.0:
   version "2.0.0"
@@ -2386,7 +2205,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.1.0, lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.19, lodash@^4.17.4, lodash@^4.2.0:
+lodash@^4.1.0, lodash@^4.15.0, lodash@^4.17.14, lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -2462,7 +2281,7 @@ minimatch@3.0.4, minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.1.0, minimist@^1.2.5:
+minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -2963,11 +2782,6 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-regenerator-runtime@^0.11.0:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
-  integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
-
 regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
@@ -2984,13 +2798,6 @@ release-zalgo@^1.0.0:
   integrity sha1-CXALflB0Mpc5Mw5TXFqQ+2eFFzA=
   dependencies:
     es6-error "^4.0.1"
-
-repeating@^1.1.0:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/repeating/-/repeating-1.1.3.tgz#3d4114218877537494f97f77f9785fab810fa4ac"
-  integrity sha1-PUEUIYh3U3SU+X93+Xhfq4EPpKw=
-  dependencies:
-    is-finite "^1.0.0"
 
 request-promise-core@1.1.4:
   version "1.1.4"
@@ -3469,11 +3276,6 @@ tmp@^0.0.33:
   integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
   dependencies:
     os-tmpdir "~1.0.2"
-
-to-fast-properties@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
-  integrity sha1-uDVx+k2MJbguIxsG46MFXeTKGkc=
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
