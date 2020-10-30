@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-publish-html-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A publish HTML plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -23,14 +23,14 @@
     "taffydb": "2.7.2"
   },
   "devDependencies": {
+    "@itsjamie/esdoc-cli": "^0.3.1",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.3.1",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.3.1",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.3.1",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
-    "nyc": "^15.1.0",
-    "@itsjamie/esdoc-cli": "^0.3.0",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.3.0",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.3.0",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.3.0"
+    "nyc": "^15.1.0"
   },
   "engines": {
     "node": ">= 10.0.0"

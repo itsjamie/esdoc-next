@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-accessor-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A accessor plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -32,7 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": ">= 0.3",
+    "@itsjamie/esdoc-cli": "^0.3.1",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",

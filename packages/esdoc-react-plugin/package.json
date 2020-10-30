@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-react-plugin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A React plugin for ESDoc [PoC]",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -13,11 +13,11 @@
     "@itsjamie/esdoc-core": "^0.3.0"
   },
   "dependencies": {
-    "@itsjamie/esdoc-publish-html-plugin": "^0.3.0",
+    "@itsjamie/esdoc-publish-html-plugin": "^0.3.1",
     "cheerio": "1.0.0-rc.1"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-standard-plugin": "^0.3.0",
+    "@itsjamie/esdoc-standard-plugin": "^0.3.1",
     "codecov": "^3.8.0",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
