@@ -5,12 +5,6 @@
     "test": "npx lerna run test"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "file:../esdoc-cli",
-    "@itsjamie/esdoc-core": "file:../esdoc-core",
-    "@itsjamie/esdoc-standard-plugin": "file:../esdoc-standard-plugin",
-    "@itsjamie/esdoc-type-inference-plugin": "file:../esdoc-type-inference-plugin",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "file:../esdoc-undocumented-identifier-plugin",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "file:../esdoc-unexported-identifier-plugin",
     "codecov": "3.7.1",
     "eslint": "6.6.0",
     "lerna": "^3.19.0",
