@@ -29,11 +29,13 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": ">= 0.2"
+    "@itsjamie/esdoc-core": ">= 0.3"
   },
   "dependencies": {
+    "color-logger": "0.0.6"
+  },
+  "devDependencies": {
     "codecov": "^3.8.0",
-    "color-logger": "0.0.6",
     "eslint": "^7.12.1",
     "mocha": "^8.2.0",
     "nyc": "^15.1.0"

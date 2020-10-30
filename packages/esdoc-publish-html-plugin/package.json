@@ -9,25 +9,28 @@
     "type": "git",
     "url": "https://github.com/itsjamie/esdoc-next"
   },
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": "^0.3.0"
+  },
   "dependencies": {
-    "babel-generator": "6.11.4",
     "cheerio": "0.22.0",
-    "codecov": "^3.8.0",
     "dompurify": "^2.0.7",
     "escape-html": "1.0.3",
-    "eslint": "^7.12.1",
     "fs-extra": "1.0.0",
     "ice-cap": "0.0.4",
     "jsdom": "^15.2.1",
     "marked": "^0.8.0",
-    "mocha": "^8.2.0",
-    "nyc": "^15.1.0",
     "taffydb": "2.7.2"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-type-inference-plugin": "file:../esdoc-type-inference-plugin",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "file:../esdoc-undocumented-identifier-plugin",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "file:../esdoc-unexported-identifier-plugin"
+    "codecov": "^3.8.0",
+    "eslint": "^7.12.1",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0",
+    "@itsjamie/esdoc-cli": "^0.3.0",
+    "@itsjamie/esdoc-type-inference-plugin": "^0.3.0",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.3.0",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.3.0"
   },
   "engines": {
     "node": ">= 10.0.0"

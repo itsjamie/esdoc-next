@@ -21,13 +21,17 @@
     "esdoc": "node ./script/esdoc.js",
     "lint": "node ./script/eslint.js"
   },
+  "devDependencies": {
+    "codecov": "^3.8.0",
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0"
+  },
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/generator": "^7.7.2",
     "@babel/parser": "^7.7.3",
     "@babel/traverse": "^7.7.2",
     "cheerio": "1.0.0-rc.3",
-    "codecov": "^3.8.0",
     "color-logger": "0.0.6",
     "escape-html": "1.0.3",
     "eslint": "^7.12.1",
@@ -35,8 +39,6 @@
     "ice-cap": "0.0.4",
     "marked": "0.7.0",
     "minimist": "^1.2.5",
-    "mocha": "^8.2.0",
-    "nyc": "^15.1.0",
     "taffydb": "2.7.3"
   },
   "keywords": [

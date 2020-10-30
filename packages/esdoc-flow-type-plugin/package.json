@@ -10,7 +10,10 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-standard-plugin": "file:../esdoc-standard-plugin"
+    "@itsjamie/esdoc-cli": ">= 0.3"
+  },
+  "peerDependencies": {
+    "@itsjamie/esdoc-core": "^0.3.0"
   },
   "engines": {
     "node": ">= 10.0.0"
