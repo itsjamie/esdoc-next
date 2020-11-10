@@ -20,7 +20,7 @@ ESDoc is a documentation generator for JavaScript.
 cd your-project/
 
 # Install ESDoc and standard plugin.
-npm install --save-dev @itsjamie/esdoc-cli @itsjamie/esdoc-standard-plugin
+npm install --save-dev @itsjamie/esdoc-core @itsjamie/esdoc-cli @itsjamie/esdoc-standard-plugin
 
 # Create a configuration file.
 echo '{
