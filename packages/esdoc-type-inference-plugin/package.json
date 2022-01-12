@@ -29,7 +29,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": ">= 0.3"
+    "@itsjamie/esdoc-core": "workspace:*"
   },
   "dependencies": {
     "color-logger": "0.0.6"

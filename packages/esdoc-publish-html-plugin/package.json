@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": "^0.3.0"
+    "@itsjamie/esdoc-core": "workspace:*"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.10",
@@ -23,10 +23,10 @@
     "taffydb": "2.7.3"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.4.0",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.4.0",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.4.0",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.4.0",
+    "@itsjamie/esdoc-cli": "workspace:*",
+    "@itsjamie/esdoc-type-inference-plugin": "workspace:*",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "workspace:*",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "workspace:*",
     "codecov": "^3.8.3",
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",

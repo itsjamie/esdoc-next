@@ -518,25 +518,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@itsjamie/esdoc-accessor-plugin@^0.3.1, @itsjamie/esdoc-accessor-plugin@workspace:packages/esdoc-accessor-plugin":
+"@itsjamie/esdoc-accessor-plugin@workspace:*, @itsjamie/esdoc-accessor-plugin@workspace:packages/esdoc-accessor-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-accessor-plugin@workspace:packages/esdoc-accessor-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": ^0.4.0
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.3"
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-brand-plugin@^0.3.1, @itsjamie/esdoc-brand-plugin@workspace:packages/esdoc-brand-plugin":
+"@itsjamie/esdoc-brand-plugin@workspace:*, @itsjamie/esdoc-brand-plugin@workspace:packages/esdoc-brand-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-brand-plugin@workspace:packages/esdoc-brand-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     cheerio: 1.0.0-rc.10
     codecov: ^3.8.3
     eslint: ^8.6.0
@@ -547,7 +547,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-cli@^0.3.1, @itsjamie/esdoc-cli@workspace:packages/esdoc-cli":
+"@itsjamie/esdoc-cli@^0.4.0, @itsjamie/esdoc-cli@workspace:*, @itsjamie/esdoc-cli@workspace:packages/esdoc-cli":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-cli@workspace:packages/esdoc-cli"
   dependencies:
@@ -556,7 +556,7 @@ __metadata:
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.3"
+    "@itsjamie/esdoc-core": "workspace:*"
   bin:
     esdoc: ./cli.js
   languageName: unknown
@@ -585,11 +585,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-coverage-plugin@^0.3.1, @itsjamie/esdoc-coverage-plugin@workspace:packages/esdoc-coverage-plugin":
+"@itsjamie/esdoc-coverage-plugin@workspace:*, @itsjamie/esdoc-coverage-plugin@workspace:packages/esdoc-coverage-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-coverage-plugin@workspace:packages/esdoc-coverage-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -601,7 +601,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-ecmascript-proposal-plugin@workspace:packages/esdoc-ecmascript-proposal-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -613,7 +613,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-exclude-source-plugin@workspace:packages/esdoc-exclude-source-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -621,11 +621,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-external-ecmascript-plugin@^0.3.1, @itsjamie/esdoc-external-ecmascript-plugin@workspace:packages/esdoc-external-ecmascript-plugin":
+"@itsjamie/esdoc-external-ecmascript-plugin@workspace:*, @itsjamie/esdoc-external-ecmascript-plugin@workspace:packages/esdoc-external-ecmascript-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-external-ecmascript-plugin@workspace:packages/esdoc-external-ecmascript-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     fs-extra: 10.0.0
@@ -638,7 +638,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-external-nodejs-plugin@workspace:packages/esdoc-external-nodejs-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     fs-extra: 10.0.0
@@ -651,7 +651,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-external-webapi-plugin@workspace:packages/esdoc-external-webapi-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     fs-extra: 10.0.0
@@ -664,13 +664,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-flow-type-plugin@workspace:packages/esdoc-flow-type-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ^0.3.0
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -678,7 +678,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-importpath-plugin@workspace:packages/esdoc-importpath-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -690,7 +690,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-inject-gtm-plugin@workspace:packages/esdoc-inject-gtm-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     cheerio: ^1.0.0-rc.10
     codecov: ^3.8.3
     eslint: ^8.6.0
@@ -704,7 +704,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-inject-script-plugin@workspace:packages/esdoc-inject-script-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     cheerio: 1.0.0-rc.10
     codecov: ^3.8.3
     eslint: ^8.6.0
@@ -718,7 +718,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-inject-style-plugin@workspace:packages/esdoc-inject-style-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     cheerio: 1.0.0-rc.10
     codecov: ^3.8.3
     eslint: ^8.6.0
@@ -728,11 +728,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-integrate-manual-plugin@^0.3.1, @itsjamie/esdoc-integrate-manual-plugin@workspace:packages/esdoc-integrate-manual-plugin":
+"@itsjamie/esdoc-integrate-manual-plugin@workspace:*, @itsjamie/esdoc-integrate-manual-plugin@workspace:packages/esdoc-integrate-manual-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-integrate-manual-plugin@workspace:packages/esdoc-integrate-manual-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -740,17 +740,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-integrate-test-plugin@^0.3.1, @itsjamie/esdoc-integrate-test-plugin@workspace:packages/esdoc-integrate-test-plugin":
+"@itsjamie/esdoc-integrate-test-plugin@workspace:*, @itsjamie/esdoc-integrate-test-plugin@workspace:packages/esdoc-integrate-test-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-integrate-test-plugin@workspace:packages/esdoc-integrate-test-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.3.0"
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -758,7 +758,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-jsx-plugin@workspace:packages/esdoc-jsx-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -766,28 +766,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-lint-plugin@^0.3.1, @itsjamie/esdoc-lint-plugin@workspace:packages/esdoc-lint-plugin":
+"@itsjamie/esdoc-lint-plugin@workspace:*, @itsjamie/esdoc-lint-plugin@workspace:packages/esdoc-lint-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-lint-plugin@workspace:packages/esdoc-lint-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.3.0"
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-publish-html-plugin@^0.3.1, @itsjamie/esdoc-publish-html-plugin@workspace:packages/esdoc-publish-html-plugin":
+"@itsjamie/esdoc-publish-html-plugin@workspace:*, @itsjamie/esdoc-publish-html-plugin@workspace:packages/esdoc-publish-html-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-publish-html-plugin@workspace:packages/esdoc-publish-html-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
-    "@itsjamie/esdoc-type-inference-plugin": ^0.3.1
-    "@itsjamie/esdoc-undocumented-identifier-plugin": ^0.3.1
-    "@itsjamie/esdoc-unexported-identifier-plugin": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
+    "@itsjamie/esdoc-type-inference-plugin": "workspace:*"
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "workspace:*"
+    "@itsjamie/esdoc-unexported-identifier-plugin": "workspace:*"
     cheerio: 1.0.0-rc.10
     codecov: ^3.8.3
     dompurify: ^2.3.4
@@ -801,7 +801,7 @@ __metadata:
     nyc: ^15.1.0
     taffydb: 2.7.3
   peerDependencies:
-    "@itsjamie/esdoc-core": ^0.3.0
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -809,7 +809,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-publish-markdown-plugin@workspace:packages/esdoc-publish-markdown-plugin"
   dependencies:
-    "@itsjamie/esdoc-cli": ^0.3.1
+    "@itsjamie/esdoc-cli": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     ice-cap: 0.0.4
@@ -823,34 +823,34 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-react-plugin@workspace:packages/esdoc-react-plugin"
   dependencies:
-    "@itsjamie/esdoc-publish-html-plugin": ^0.3.1
-    "@itsjamie/esdoc-standard-plugin": ^0.3.1
+    "@itsjamie/esdoc-publish-html-plugin": "workspace:*"
+    "@itsjamie/esdoc-standard-plugin": "workspace:*"
     cheerio: 1.0.0-rc.10
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ^0.3.0
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-standard-plugin@^0.3.1, @itsjamie/esdoc-standard-plugin@workspace:packages/esdoc-standard-plugin":
+"@itsjamie/esdoc-standard-plugin@workspace:*, @itsjamie/esdoc-standard-plugin@workspace:packages/esdoc-standard-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-standard-plugin@workspace:packages/esdoc-standard-plugin"
   dependencies:
-    "@itsjamie/esdoc-accessor-plugin": ^0.3.1
-    "@itsjamie/esdoc-brand-plugin": ^0.3.1
-    "@itsjamie/esdoc-cli": ^0.3.1
-    "@itsjamie/esdoc-coverage-plugin": ^0.3.1
-    "@itsjamie/esdoc-external-ecmascript-plugin": ^0.3.1
-    "@itsjamie/esdoc-integrate-manual-plugin": ^0.3.1
-    "@itsjamie/esdoc-integrate-test-plugin": ^0.3.1
-    "@itsjamie/esdoc-lint-plugin": ^0.3.1
-    "@itsjamie/esdoc-publish-html-plugin": ^0.3.1
-    "@itsjamie/esdoc-type-inference-plugin": ^0.3.1
-    "@itsjamie/esdoc-undocumented-identifier-plugin": ^0.3.1
-    "@itsjamie/esdoc-unexported-identifier-plugin": ^0.3.1
+    "@itsjamie/esdoc-accessor-plugin": "workspace:*"
+    "@itsjamie/esdoc-brand-plugin": "workspace:*"
+    "@itsjamie/esdoc-cli": "workspace:*"
+    "@itsjamie/esdoc-coverage-plugin": "workspace:*"
+    "@itsjamie/esdoc-external-ecmascript-plugin": "workspace:*"
+    "@itsjamie/esdoc-integrate-manual-plugin": "workspace:*"
+    "@itsjamie/esdoc-integrate-test-plugin": "workspace:*"
+    "@itsjamie/esdoc-lint-plugin": "workspace:*"
+    "@itsjamie/esdoc-publish-html-plugin": "workspace:*"
+    "@itsjamie/esdoc-type-inference-plugin": "workspace:*"
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "workspace:*"
+    "@itsjamie/esdoc-unexported-identifier-plugin": "workspace:*"
     codecov: ^3.8.3
     eslint: ^8.6.0
     mocha: ^9.1.3
@@ -858,7 +858,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-type-inference-plugin@^0.3.1, @itsjamie/esdoc-type-inference-plugin@workspace:packages/esdoc-type-inference-plugin":
+"@itsjamie/esdoc-type-inference-plugin@workspace:*, @itsjamie/esdoc-type-inference-plugin@workspace:packages/esdoc-type-inference-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-type-inference-plugin@workspace:packages/esdoc-type-inference-plugin"
   dependencies:
@@ -868,7 +868,7 @@ __metadata:
     mocha: ^9.1.3
     nyc: ^15.1.0
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.3"
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -882,11 +882,11 @@ __metadata:
     nyc: ^15.1.0
     typescript: ^4.5.4
   peerDependencies:
-    "@itsjamie/esdoc-core": ">= 0.2"
+    "@itsjamie/esdoc-core": "workspace:*"
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-undocumented-identifier-plugin@^0.3.1, @itsjamie/esdoc-undocumented-identifier-plugin@workspace:packages/esdoc-undocumented-identifier-plugin":
+"@itsjamie/esdoc-undocumented-identifier-plugin@workspace:*, @itsjamie/esdoc-undocumented-identifier-plugin@workspace:packages/esdoc-undocumented-identifier-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-undocumented-identifier-plugin@workspace:packages/esdoc-undocumented-identifier-plugin"
   dependencies:
@@ -897,7 +897,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@itsjamie/esdoc-unexported-identifier-plugin@^0.3.1, @itsjamie/esdoc-unexported-identifier-plugin@workspace:packages/esdoc-unexported-identifier-plugin":
+"@itsjamie/esdoc-unexported-identifier-plugin@workspace:*, @itsjamie/esdoc-unexported-identifier-plugin@workspace:packages/esdoc-unexported-identifier-plugin":
   version: 0.0.0-use.local
   resolution: "@itsjamie/esdoc-unexported-identifier-plugin@workspace:packages/esdoc-unexported-identifier-plugin"
   dependencies:

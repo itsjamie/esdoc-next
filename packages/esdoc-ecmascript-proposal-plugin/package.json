@@ -31,7 +31,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.4.0",
+    "@itsjamie/esdoc-cli": "workspace:*",
     "codecov": "^3.8.3",
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",

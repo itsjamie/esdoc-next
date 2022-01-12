@@ -10,20 +10,20 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "dependencies": {
-    "@itsjamie/esdoc-accessor-plugin": "^0.4.0",
-    "@itsjamie/esdoc-brand-plugin": "^0.4.0",
-    "@itsjamie/esdoc-coverage-plugin": "^0.4.0",
-    "@itsjamie/esdoc-external-ecmascript-plugin": "^0.4.0",
-    "@itsjamie/esdoc-integrate-manual-plugin": "^0.4.0",
-    "@itsjamie/esdoc-integrate-test-plugin": "^0.4.0",
-    "@itsjamie/esdoc-lint-plugin": "^0.4.0",
-    "@itsjamie/esdoc-publish-html-plugin": "^0.4.0",
-    "@itsjamie/esdoc-type-inference-plugin": "^0.4.0",
-    "@itsjamie/esdoc-undocumented-identifier-plugin": "^0.4.0",
-    "@itsjamie/esdoc-unexported-identifier-plugin": "^0.4.0"
+    "@itsjamie/esdoc-accessor-plugin": "workspace:*",
+    "@itsjamie/esdoc-brand-plugin": "workspace:*",
+    "@itsjamie/esdoc-coverage-plugin": "workspace:*",
+    "@itsjamie/esdoc-external-ecmascript-plugin": "workspace:*",
+    "@itsjamie/esdoc-integrate-manual-plugin": "workspace:*",
+    "@itsjamie/esdoc-integrate-test-plugin": "workspace:*",
+    "@itsjamie/esdoc-lint-plugin": "workspace:*",
+    "@itsjamie/esdoc-publish-html-plugin": "workspace:*",
+    "@itsjamie/esdoc-type-inference-plugin": "workspace:*",
+    "@itsjamie/esdoc-undocumented-identifier-plugin": "workspace:*",
+    "@itsjamie/esdoc-unexported-identifier-plugin": "workspace:*"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.4.0",
+    "@itsjamie/esdoc-cli": "workspace:*",
     "codecov": "^3.8.3",
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",

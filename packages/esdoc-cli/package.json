@@ -23,7 +23,7 @@
     "esdoc": "./cli.js"
   },
   "peerDependencies": {
-    "@itsjamie/esdoc-core": ">= 0.3"
+    "@itsjamie/esdoc-core": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
