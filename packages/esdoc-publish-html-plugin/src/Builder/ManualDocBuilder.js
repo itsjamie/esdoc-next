@@ -103,25 +103,26 @@ class ManualDocBuilder extends DocBuilder {
   _buildManualNav(manuals) {
     const ice = new IceCap(this._readTemplate('manualIndex.html'));
 
-    ice.loop('manual', manuals, (i, manual, ice)=>{
+    ice.loop('manual', manuals, (i, manual, ice) => {
       const toc = [];
       const fileName = this._getManualOutputFileName(manual.name);
       const html = markdown(manual.content);
-      const $root = cheerio.load(html).root();
+      const $ = cheerio.load(html);
+      const $root = $.root();
       const h1Count = $root.find('h1').length;
 
-      $root.find('h1,h2,h3,h4,h5').each((i, el)=>{
-        const $el = cheerio(el);
+      $root.find('h1,h2,h3,h4,h5').each((i, el) => {
+        const $el = $(el);
         const label = $el.text();
         const indent = `indent-${el.tagName.toLowerCase()}`;
 
         let link = `${fileName}#${$el.attr('id')}`;
         if (el.tagName.toLowerCase() === 'h1' && h1Count === 1) link = fileName;
 
-        toc.push({label, link, indent});
+        toc.push({ label, link, indent });
       });
 
-      ice.loop('manualNav', toc, (i, tocItem, ice)=>{
+      ice.loop('manualNav', toc, (i, tocItem, ice) => {
         ice.attr('manualNav', 'class', tocItem.indent);
         ice.attr('manualNav', 'data-link', tocItem.link.split('#')[0]);
         ice.text('link', tocItem.label);
@@ -144,23 +145,22 @@ class ManualDocBuilder extends DocBuilder {
     ice.load('content', html);
 
     // convert relative src to base url relative src.
-    const $root = cheerio.load(ice.html).root();
-    $root.find('img').each((i, el)=>{
-      const $el = cheerio(el);
-      const src = $el.attr('src');
+    const $ = cheerio.load(ice.html);
+    const $root = $.root();
+    $root.find('img').each(() => {
+      const src = $(this).attr('src');
       if (!src) return;
       if (src.match(/^http[s]?:/)) return;
       if (src.charAt(0) === '/') return;
-      $el.attr('src', `./manual/${src}`);
+      $(this).attr('src', `./manual/${src}`);
     });
-    $root.find('a').each((i, el)=>{
-      const $el = cheerio(el);
-      const href = $el.attr('href');
+    $root.find('a').each(() => {
+      const href = $(this).attr('href');
       if (!href) return;
       if (href.match(/^http[s]?:/)) return;
       if (href.charAt(0) === '/') return;
       if (href.charAt(0) === '#') return;
-      $el.attr('href', `./manual/${href}`);
+      $(this).attr('href', `./manual/${href}`);
     });
 
     return $root.html();
@@ -177,11 +177,12 @@ class ManualDocBuilder extends DocBuilder {
     for (const manual of manuals) {
       const fileName = this._getManualOutputFileName(manual.name);
       const html = this._buildManual(manual);
-      const $root = cheerio.load(html).root();
+      const $ = cheerio.load(html);
+      const $root = $.root();
       const h1Count = $root.find('h1').length;
 
-      $root.find('h1').each((i, el)=>{
-        const $el = cheerio(el);
+      $root.find('h1').each(() => {
+        const $el = $(this);
         const label = $el.text();
         const link = h1Count === 1 ? fileName : `${fileName}#${$el.attr('id')}`;
         let card = `<h1>${label}</h1>`;
@@ -195,12 +196,12 @@ class ManualDocBuilder extends DocBuilder {
           card += `<${tagName}>${$next.html()}</${tagName}>`;
         }
 
-        cards.push({label, link, card});
+        cards.push({ label, link, card });
       });
     }
 
     const ice = new IceCap(this._readTemplate('manualCardIndex.html'));
-    ice.loop('cards', cards, (i, card, ice)=>{
+    ice.loop('cards', cards, (i, card, ice) => {
       ice.attr('link', 'href', card.link);
       ice.load('card', card.card);
     });

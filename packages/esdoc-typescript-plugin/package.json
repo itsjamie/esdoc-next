@@ -13,11 +13,11 @@
     "@itsjamie/esdoc-core": ">= 0.2"
   },
   "dependencies": {
-    "codecov": "^3.8.0",
-    "eslint": "^7.12.1",
-    "mocha": "^8.2.0",
+    "codecov": "^3.8.3",
+    "eslint": "^8.6.0",
+    "mocha": "^9.1.3",
     "nyc": "^15.1.0",
-    "typescript": "^3.7.4"
+    "typescript": "^4.5.4"
   },
   "engines": {
     "node": ">= 10.0.0"
