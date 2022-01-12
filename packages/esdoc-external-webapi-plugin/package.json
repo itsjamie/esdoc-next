@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-external-webapi-plugin",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A external Web API plugin for ESDoc",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -13,7 +13,7 @@
     "fs-extra": "10.0.0"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.3.1",
+    "@itsjamie/esdoc-cli": "^0.4.0",
     "codecov": "^3.8.3",
     "eslint": "^8.6.0",
     "mocha": "^9.1.3",

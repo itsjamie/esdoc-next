@@ -1,6 +1,6 @@
 {
   "name": "@itsjamie/esdoc-flow-type-plugin",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A flow type plugin for ESDoc [PoC]",
   "author": "h13i32maru",
   "homepage": "https://github.com/itsjamie/esdoc-next",
@@ -10,7 +10,7 @@
     "url": "https://github.com/itsjamie/esdoc-next"
   },
   "devDependencies": {
-    "@itsjamie/esdoc-cli": "^0.3.1"
+    "@itsjamie/esdoc-cli": "^0.4.0"
   },
   "peerDependencies": {
     "@itsjamie/esdoc-core": "^0.3.0"
