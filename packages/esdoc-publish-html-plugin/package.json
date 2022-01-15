@@ -19,7 +19,7 @@
     "fs-extra": "10.0.0",
     "ice-cap": "0.0.4",
     "jsdom": "^15.2.1",
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "taffydb": "2.7.3"
   },
   "devDependencies": {
